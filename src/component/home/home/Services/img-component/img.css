@@ -1,0 +1,20 @@
+
+
+.img-main-1-container{
+  margin: -100px;
+}
+
+
+.content-main span.img-main-txt {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 1rem;
+  letter-spacing: 10px;
+  font-size: 6vw;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 250px;
+  /* margin-left: -650px; */
+  transform: translateX(-650px);
+}

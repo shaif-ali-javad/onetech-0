@@ -1,0 +1,7 @@
+.service-border{
+    /* display: none; */
+    background-color: black;
+    width: 20%;
+    height: 7px;
+    margin: -5px 0 10px;
+}
