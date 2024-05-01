@@ -1,0 +1,1 @@
+import{j as r,B as e,T as o}from"./index-BqUgFiYY.js";function t(){return r.jsx(e,{textAlign:"center",children:r.jsx(e,{sx:{p:30},children:r.jsx(o,{sx:{fontSize:50},children:"More companies trust Sophos for MDR than any other cybersecurity provider."})})})}export{t as default};
