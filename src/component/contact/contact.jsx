@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import "./contact.css"; 
 
 // mui
-import { Box, Paper, Typography, TextField } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import { styled } from '@mui/material/styles';
 
 const Item = styled(Paper)(({ theme }) => ({

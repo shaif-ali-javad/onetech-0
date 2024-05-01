@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { Grid, Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import React, { Component } from "react";
 import "./footer.css";

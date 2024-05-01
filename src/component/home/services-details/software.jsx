@@ -5,7 +5,10 @@ import Services1 from './software/services1.jsx'
 import Review from './software/review.jsx'
 
 // mui
-import { Box, Button, CssBaseline, Grid, Paper, Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
+import Button from '@mui/material/Button'
+import Box from '@mui/material/Box'
 
 function officeAutomation() {
   return (
