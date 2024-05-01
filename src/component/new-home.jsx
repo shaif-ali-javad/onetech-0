@@ -1,5 +1,6 @@
 import React from 'react'
 import './new-home/home.css'
+import { NavLink } from "react-router-dom";
 
 // image
 import image0 from '../assets/1.png'
@@ -9,10 +10,12 @@ import image2 from '../assets/3.png'
 // mui
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import Navbar from './global-component/navbar'
 
 function newhome() {
   return (
     <Box sx={{ }} className="home-container">
+      <Navbar />
         <Box sx={{ p:10, pt: 20}} className="home-image">
         <Box display={'grid'} gridTemplateColumns={'repeat(2, 1fr)'}>
 
@@ -39,7 +42,9 @@ function newhome() {
         WE DON'T JUST CARE
       </Typography>
       <Typography variant='h1' sx={{fontSize:43, fontWeight:600}} gutterBottom className='home-title-1'>
-        Network
+        <NavLink className="link-0" to="/network">
+          Network
+        </NavLink>
       </Typography>
       <Typography variant='h2' sx={{fontSize:16, fontWeight:400}} className='home-title-2'>
         Your Success Requires Sophisticated Tectnological Expertise. Don't Be Held Back. Stay Competitive By Empowering Your Team With Elevated Managed IT.
