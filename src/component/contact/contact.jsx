@@ -32,7 +32,7 @@ export class Contact extends Component {
               <p> 
                 <strong>landline</strong>
                 <br />
-                044-21242124
+                +971 4 552 0889
               </p>
 
               </Item>
@@ -46,7 +46,7 @@ export class Contact extends Component {
               <p>
                 <strong>Phone</strong>
                 <br />
-                +971-50-415-3141
+                +971 504 153 141
               </p>
               </Item>
               </Box>
@@ -59,7 +59,7 @@ export class Contact extends Component {
               <p>
                 <strong>Email</strong>
                 <br />
-                support@onetechae.com
+                sales@onetechuae.com
               </p>
 
               </Item>
@@ -73,8 +73,7 @@ export class Contact extends Component {
               <p>
                 <strong>Location</strong>
                 <br />
-                Office 408, koko building, near naif intersection bus station,
-                Dubai, United Arab Emirates
+                G11, Madina Mall, Muhaisnah 4, Dubai, UAE, P.O Box: 120735
               </p>
 
           </Item>

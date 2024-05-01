@@ -94,7 +94,10 @@ export class Footer extends Component {
                 <Typography variant="h4" gutterBottom className="text-uppercase fw-bold mt-4">Contact</Typography>
                 <Box className="row">
                   <p className="d-flex col-12 col-lg-4">
-                    <i className="fas fa-phone mr-3 mt-1"></i>+971 50 415 3141
+                    <i className="fas fa-telephone mr-3 mt-1"></i>+971 4 552 0889
+                  </p>
+                  <p className="d-flex col-12 col-lg-4">
+                    <i className="fas fa-phone mr-3 mt-1"></i>+971 504 153 141
                   </p>
                   <p className="d-flex col-12 col-lg-4">
                     <i className="fas fa-envelope mr-3 mt-1"></i>{" "}
@@ -102,7 +105,7 @@ export class Footer extends Component {
                   </p>
                   <p className="d-flex col-12 col-lg-4">
                     <i className="fas fa-home mr-3 mt-1"></i>
-                    G11, Madina Mall, Muhaisnah 4, P.O Box: 120735 Dubai-UAE
+                    G11, Madina Mall, Muhaisnah 4, Dubai, UAE, P.O Box: 120735
                   </p>
                 </Box>
               </Box>
