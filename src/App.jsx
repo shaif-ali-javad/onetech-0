@@ -89,7 +89,7 @@ function App() {
       <Router>
         <Suspense fallback={<h1>loading.....</h1>}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/onetech-0" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
