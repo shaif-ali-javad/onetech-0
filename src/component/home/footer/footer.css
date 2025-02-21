@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.style0 {
+    border-top: 1px solid #010d4a;
+    color: #fff;
+  }
+  /* @media screen and (max-width: 620px) {
+    .style1 {
+      display: block;
+    }
+  } */
+  .style2 {
+    width: 60px;
+    /* background-color: rgb(5, 7, 36); */
+    height: 2px;
+  }
+  /* .style3 {
+    background-color: rgba(8, 5, 39, 0.2);
+  } */
+  .service-link {
+    color: #fff;
+  }
+  

@@ -1,4 +1,4 @@
-// import "./img.css";
+import "./img.css";
 
 // import Text from "./img-typewriter";
 // import "animate.css";

@@ -1,7 +1,7 @@
 import React, { Component, useState, createRef } from "react";
 
 import { NavLink } from "react-router-dom";
-// import "./navbar.css";
+import "./navbar.css";
 import logo from "./image/Artboard 1@00x.png";
 
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/outline";
@@ -303,7 +303,7 @@ class Navbar extends Component {
                   >
                     <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                       <IThomePage />
-                    </div>
+                    </div>.
                   </div>
                 )}
               </li>

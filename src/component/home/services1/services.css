@@ -1,0 +1,108 @@
+.services1 .holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .services1 .holder .heading {
+    position: relative;
+    text-align: center;
+    margin: 100px 0;
+    padding: 0 50px;
+    font-size: 25px;
+  }
+  
+  .services1 .holder .heading p {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .services1 .holder .container0 {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 100px;
+  }
+  
+  @media screen and (max-width: 1140px) {
+    .services1 .holder .container0 {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 0 400px;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .services1 .holder .container0 {
+      position: relative;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 0 400px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .services1 .holder .container0 {
+      margin: 0 0 350px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .services1 .holder .container0 {
+      margin: 0 0 300px;
+    }
+  }
+  
+  .services1 .holder .container0 .box {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3 ease-in-out;
+    padding: 40px;
+  }
+  
+  .services1 .holder .container0 .box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .services1 .holder .container0 .color {
+    background-color: #011032;
+  }
+  
+  .services1 .holder .container0 img {
+    height: 50px;
+    margin: 25px;
+  }
+  
+  .services1 .holder .container0 h4 {
+    color: #ef4323;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .services1 .holder .container0 .box0 h4 {
+    color: #ef4323;
+  }
+  
+  .services1 .holder .container0 .p {
+    margin-bottom: 20px;
+  }
+  
+  .services1 .holder .container0 .p-main {
+    margin-bottom: 20px;
+  }
+  
+  .services1 .holder .container0 .more {
+    width: 130px;
+    background-color: #ef4323;
+    margin: auto;
+    border-radius: 30px;
+  }
+  
+  .services1 .holder .container0 .box0 .more {
+    background-color: #ef4323;
+  }
+  

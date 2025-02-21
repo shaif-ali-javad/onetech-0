@@ -1,16 +1,11 @@
 import { useRef } from "react";
-// import "./framer-m.css";
-// import "./home/Services/img-component/img.css";
+import "./framer-m.css";
 
 import { motion, useTransform, useScroll } from "framer-motion";
-
-// import "aos/dist/aos.css";
-// import Aos from "aos";
 
 import IMG_TXT from "./home/Services/img-component/img-txt.jsx";
 
 import img0 from "./home/Services/image/parelall-scroll/0(1).jpg";
-// import Img1 from "./home/Services/img-component/img1";
 import img1 from "./home/Services/image/parelall-scroll/1(1).jpg"
 import img2 from "./home/Services/image/parelall-scroll/2(1).jpg";
 import img3 from "./home/Services/image/parelall-scroll/3(1).jpg";
@@ -24,28 +19,8 @@ import img10 from "./home/Services/image/parelall-scroll/10(1).jpg";
 import img11 from "./home/Services/image/parelall-scroll/11(1).png";
 import img12 from "./home/Services/image/parelall-scroll/12(1).jpg";
 
-// import Img0 from "./home/Services/image/parelall-scroll/0(1).jpg";
-// import Img1 from "./home/Services/image/parelall-scroll/1(1).jpg";
-// import Img2 from "./home/Services/image/parelall-scroll/2(1).jpg";
-// import Img3 from "./home/Services/image/parelall-scroll/3(1).jpg";
-// import Img4 from "./home/Services/image/parelall-scroll/4.jpg";
-// import Img5 from "./home/Services/image/parelall-scroll/5(1).jpg";
-// import Img6 from "./home/Services/image/parelall-scroll/6(1).jpg";
-// import Img7 from "./home/Services/image/parelall-scroll/7(1).jpg";
-// import Img8 from "./home/Services/image/parelall-scroll/8(1).jpg";
-// import Img9 from "./home/Services/image/parelall-scroll/9(1).jpg";
-// import Img10 from "./home/Services/image/parelall-scroll/10(1).jpg";
-// import Img11 from "./home/Services/image/parelall-scroll/11(1).png";
-// import Img12 from "./home/Services/image/parelall-scroll/12(1).jpg";
-
-
 function ServicesPage() {
-  // const ref = useRef(null);
-  // const { scrollYProgress } = useScroll(() => {
-  //   target: ref;
-  //   offset: ["start start", "end start"];
-  // });
-  // const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   return (
     <>
       <div className="App">
@@ -53,7 +28,7 @@ function ServicesPage() {
           <IMG_TXT />
         </motion.h1>
         <div className="grid-container">
-          <div className="line text-center p-11">
+          <div className="line text-center p-8 text-gray-900">
             <h1 className="text-3xl font-medium mb-3">Value Added Range of ICT Solutions</h1>
             <p className="">
               Providing you best-in-class Communication & Technology Solutions
@@ -71,12 +46,12 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img0 /> */}
-                <img src={img0} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+                <img src={img0} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
               {/* <Img1/> */}
             </div>
             <div className="office-automation">
-              <h3 className="mb-3 text-2xl">Office Automation</h3>
-              <p className="">
+              <h3 className="mb-3 text-2xl">Office Automation</h3> 
+              <p>
                 Maximize office productivity and streamline workflow with an
                 efficient fleet of office equipment including Colour & B/W
                 Multifunctional Printers.
@@ -92,7 +67,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img1 /> */}
-              <img src={img1} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img1} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Software Solutions</h3>
@@ -112,7 +87,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img2 /> */}
-              <img src={img2} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img2} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">AV Solutions</h3>
@@ -132,7 +107,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img3 /> */}
-              <img src={img3} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img3} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Structured Cabling</h3>
@@ -152,7 +127,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img4 /> */}
-              <img src={img4} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img4} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">ELV Systems</h3>
@@ -172,7 +147,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img5 /> */}
-              <img src={img5} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img5} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Backup and Disaster Recovery Management</h3>
@@ -194,7 +169,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img6 /> */}
-              <img src={img6} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img6} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Home Automation</h3>
@@ -218,7 +193,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img7 /> */}
-              <img src={img7} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img7} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Cloud Services</h3>
@@ -241,7 +216,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img8 /> */}
-              <img src={img8} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img8} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Maintenance & Support</h3>
@@ -265,7 +240,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img9 /> */}
-              <img src={img9} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img9} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">AI Based Solutions</h3>
@@ -286,7 +261,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img10 /> */}
-              <img src={img10} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img10} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="Data-Centre-Solutions">
               <h3 className="mb-3 text-2xl">Data Centre Solutions</h3>
@@ -311,7 +286,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img11 /> */}
-              <img src={img11} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img11} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Microsoft Azure / Office 365</h3>
@@ -335,7 +310,7 @@ function ServicesPage() {
               // transition={{ duration: 1 }}
             >
               {/* <Img12 /> */}
-              <img src={img12} alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
+              <img src={img12} alt="Olive drab green insulated bottle with flared screw lid and flat top." className="w-full h-82 rounded-lg bg-gray-200 object-cover"/>
             </div>
             <div className="office-automation">
               <h3 className="mb-3 text-2xl">Web development</h3>

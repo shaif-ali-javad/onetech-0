@@ -42,7 +42,7 @@ export const IThomePage = () => {
     {
       question: "Is it possible to upgrade or downgrade my IT AMC service?",
       answer:
-        "You can easily scale your <span class='font-semibold text-indigo-600'> IT AMC services </span> in response to business changes or developments. You can set up a call with our team to discuss your options by using our remote support services.",
+        "You can easily scale your <span className='font-semibold text-indigo-600'> IT AMC services </span> in response to business changes or developments. You can set up a call with our team to discuss your options by using our remote support services.",
     },
   ];
 
@@ -142,7 +142,7 @@ export const IThomePage = () => {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="/"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>
@@ -169,18 +169,18 @@ export const IThomePage = () => {
 
       <LogoSlider />
 
-      <div class="bg-gray py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
+      <div className="bg-gray py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
               IT AMC Services In Dubai
             </h2>
-            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">
+            <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">
               IT Annual Maintenance Contract in Dubai
             </p>
-            <p class="mt-6 text-lg/8 text-gray-600">
+            <p className="mt-6 text-lg/8 text-gray-600">
               Our{" "}
-              <span class=" font-semibold text-indigo-600">
+              <span className=" font-semibold text-indigo-600">
                 IT Annual Maintenance Contract (AMC)
               </span>{" "}
               is designed to provide you with comprehensive IT support and
@@ -190,13 +190,13 @@ export const IThomePage = () => {
               support engineers.
             </p>
           </div>
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -214,11 +214,11 @@ export const IThomePage = () => {
                   Comprehensive AMC
                 </dt>
               </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -236,11 +236,11 @@ export const IThomePage = () => {
                   24/7 Critical On-site Support
                 </dt>
               </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -258,11 +258,11 @@ export const IThomePage = () => {
                   Non-Comprehensive AMC
                 </dt>
               </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -280,11 +280,11 @@ export const IThomePage = () => {
                   Outsourced IT Support Engineer
                 </dt>
               </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -302,11 +302,11 @@ export const IThomePage = () => {
                   Reliable Remote Support
                 </dt>
               </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className="relative pl-16">
+                <dt className="text-base/7 font-semibold text-gray-800">
+                  <div className="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
-                      class="size-6 text-white"
+                      className="size-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -327,48 +327,48 @@ export const IThomePage = () => {
             </dl>
           </div>
 
-          <div class=" py-24 sm:py-32">
-            <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-              <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
-                <div class="relative lg:row-span-2">
-                  <div class="absolute inset-px rounded-lg bg-gray-100 lg:rounded-l-[2rem]"></div>
-                  <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)] pb-8">
-                    <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
+          <div className=" py-24 sm:py-32">
+            <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+              <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
+                <div className="relative lg:row-span-2">
+                  <div className="absolute inset-px rounded-lg bg-gray-100 lg:rounded-l-[2rem]"></div>
+                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)] pb-8">
+                    <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
                         IT AMC Dubai
                       </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                         Annual Maintenance Contract to run you IT operations
                         smoothly.
                       </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                         Our flexible IT AMC Annual Maintenance Plans offer 24/7
                         reliable support for your network and resources.
                       </p>
                     </div>
                   </div>
-                  <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+                  <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
                 </div>
 
-                <div class="relative lg:row-span-2">
-                  <div class="absolute inset-px rounded-lg bg-gray-100 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-                  <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)] pb-8">
-                    <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
+                <div className="relative lg:row-span-2">
+                  <div className="absolute inset-px rounded-lg bg-gray-100 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)] pb-8">
+                    <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
                         IT Outsourcing
                       </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                         Right partner to entrust with the management of your IT
                         infrastructure.
                       </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                         Outsource your entire IT landscape, including IT service
                         planning and management, to achieve greater business
                         performance.
                       </p>
                     </div>
                   </div>
-                  <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+                  <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
                 </div>
               </div>
             </div>
@@ -376,18 +376,18 @@ export const IThomePage = () => {
         </div>
       </div>
 
-      <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
-          class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
+          className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
         />
         <div
-          class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+          className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
           aria-hidden="true"
         >
           <div
-            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -395,30 +395,30 @@ export const IThomePage = () => {
           ></div>
         </div>
         <div
-          class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+          className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
           aria-hidden="true"
         >
           <div
-            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           ></div>
         </div>
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-auto text-center">
-            <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-auto text-center">
+            <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
               Get Your Free IT Assessment Today
             </h2>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
+            <p className="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
               Protect Your Business with Reliable IT AMC Services in Dubai.
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="/"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
@@ -429,10 +429,10 @@ export const IThomePage = () => {
         </div>
       </div>
 
-      <div class="relative isolate overflow-hidden bg-gray px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-        <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div className="relative isolate overflow-hidden bg-gray px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
-            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -447,7 +447,7 @@ export const IThomePage = () => {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+            <svg x="50%" y="-1" className="overflow-visible fill-gray-50">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 stroke-width="0"
@@ -461,31 +461,31 @@ export const IThomePage = () => {
             />
           </svg>
         </div>
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          {/* <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-      <div class="lg:pr-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em]">TRANSFORM RELIABLY</p>
-          <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-200 sm:text-5xl">A better workflow</h1>
-          <p class="mt-6 text-xl/8 text-gray-300">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          {/* <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div className="lg:pr-4">
+        <div className="lg:max-w-lg">
+          <p className="text-base/7 font-semibold text-indigo-600 tracking-[.35em]">TRANSFORM RELIABLY</p>
+          <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-200 sm:text-5xl">A better workflow</h1>
+          <p className="mt-6 text-xl/8 text-gray-300">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
         </div>
       </div>
     </div> */}
-          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            {/* <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt=""/> */}
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            {/* <img className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt=""/> */}
 
-            <div class="lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 pt-8">
-              <div class="lg:pr-4">
-                <div class="lg:max-w-lg">
-                  <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
+            <div className="lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 pt-8">
+              <div className="lg:pr-4">
+                <div className="lg:max-w-lg">
+                  <p className="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
                     TRANSFORM RELIABLY
                   </p>
-                  <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">
+                  <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">
                     Fortifying Your IT Infrastructure with Tailored Solutions
                   </h1>
-                  <p class="mt-6 text-xl/8 text-gray-600">
+                  <p className="mt-6 text-xl/8 text-gray-600">
                     By providing{" "}
-                    <span class="font-semibold text-indigo-600">
+                    <span className="font-semibold text-indigo-600">
                       IT AMC Services in Dubai
                     </span>{" "}
                     we create value across the IT spectrum through deploying
@@ -496,13 +496,13 @@ export const IThomePage = () => {
               </div>
             </div>
           </div>
-          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-                <ul class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3">
+          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div className="lg:pr-4">
+              <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
+                <ul className="mt-8 space-y-8 text-gray-600">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -524,7 +524,7 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         24/7 Active Monitoring
                       </strong>
                       <br /> With our rapid response and proactive tech failure
@@ -532,9 +532,9 @@ export const IThomePage = () => {
                       and eliminates downtime.
                     </span>
                   </li>
-                  <li class="flex gap-x-3">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -556,16 +556,16 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         Remote and On-site IT Support
                       </strong>
                       <br /> We provide unlimited Remote and Onsite IT Support
                       AMC Services to SME's in Dubai.
                     </span>
                   </li>
-                  <li class="flex gap-x-3">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -587,7 +587,7 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         Data Back-up & Recovery
                       </strong>
                       <br /> We provide specialized and tailored backup support
@@ -595,9 +595,9 @@ export const IThomePage = () => {
                       especially in the event of breakdowns or failures.
                     </span>
                   </li>
-                  <li class="flex gap-x-3">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -619,7 +619,7 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         Software & Hardware Installation
                       </strong>
                       <br /> Software and Hardware installation is performed by
@@ -627,9 +627,9 @@ export const IThomePage = () => {
                       installing and upgrading your system.
                     </span>
                   </li>
-                  <li class="flex gap-x-3">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -651,7 +651,7 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         Cyber Security
                       </strong>
                       <br />
@@ -660,9 +660,9 @@ export const IThomePage = () => {
                       response to ensure your digital assets remain secure.
                     </span>
                   </li>
-                  <li class="flex gap-x-3">
+                  <li className="flex gap-x-3">
                     <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
+                      className="mt-1 size-5 flex-none text-indigo-600"
                       fill="none"
                       viewBox="0 0 20 25"
                       stroke="currentColor"
@@ -684,7 +684,7 @@ export const IThomePage = () => {
                       />
                     </svg>
                     <span>
-                      <strong class="font-semibold text-gray-800">
+                      <strong className="font-semibold text-gray-800">
                         Server Troubleshooting
                       </strong>
                       <br /> If your server does not respond well faces issues
@@ -700,126 +700,126 @@ export const IThomePage = () => {
       </div>
 
       <img
-        class="w-full rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] m-auto mb-11"
+        className="w-full rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] m-auto mb-11"
         src="https://cubezix.com/wp-content/uploads/2024/08/Cubezix-Workflow.svg"
         alt=""
       />
 
-      <div class=" py-24 sm:py-32">
-        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-          <h2 class="text-center text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
+      <div className=" py-24 sm:py-32">
+        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <h2 className="text-center text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
             IT AMC
           </h2>
-          <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+          <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
             Service Level Agreement (SLA)
           </p>
-          <p class="mx-auto mt-5 mb-16 lg:mb-10 max-w-lg text-balance text-center tracking-tight text-gray-950">
+          <p className="mx-auto mt-5 mb-16 lg:mb-10 max-w-lg text-balance text-center tracking-tight text-gray-950">
             One fundamental aspect of IT services is infrastructure management.
             This involves the design, implementation, and maintenance of the
             hardware, software, networks, and servers.
           </p>
 
-          <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-4">
-            <div class="relative ">
-              <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+          <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-4">
+            <div className="relative ">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     Mobile friendly
                   </p>
-                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
                     qui lorem cupidatat commodo.
                   </p>
                 </div>
-                <div class="relative lg:pb-7 pb-2 w-full grow">
-                  <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <div className="relative lg:pb-7 pb-2 w-full grow">
+                  <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                     <img
-                      class="w-full max-lg:max-w-xs"
+                      className="w-full max-lg:max-w-xs"
                       src="https://cubezix.com/wp-content/uploads/2024/09/PriorityCircles-scaled.webp"
                       alt=""
                     />
                   </div>
-                  {/* <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                  {/* <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
           </div> */}
                 </div>
               </div>
-              <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
             </div>
 
-            <div class="relative ">
-              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+            <div className="relative ">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     Performance
                   </p>
-                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit
                     maiores impedit.
                   </p>
                 </div>
-                <div class="relative lg:pb-7 pb-2 w-full grow">
-                  <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <div className="relative lg:pb-7 pb-2 w-full grow">
+                  <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                     <img
-                      class="w-full max-lg:max-w-xs"
+                      className="w-full max-lg:max-w-xs"
                       src="https://cubezix.com/wp-content/uploads/2024/09/PriorityCirclesmedium-scaled.webp"
                       alt=""
                     />
                   </div>
                 </div>
               </div>
-              <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
             </div>
 
-            <div class="relative ">
-              <div class="absolute inset-px rounded-lg bg-white"></div>
-              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+            <div className="relative ">
+              <div className="absolute inset-px rounded-lg bg-white"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     Security
                   </p>
-                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                     Morbi viverra dui mi arcu sed. Tellus semper adipiscing
                     suspendisse semper morbi.
                   </p>
                 </div>
-                <div class="relative lg:pb-7 pb-2 w-full grow">
-                  <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-5 sm:px-10 lg:pb-2">
+                <div className="relative lg:pb-7 pb-2 w-full grow">
+                  <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-5 sm:px-10 lg:pb-2">
                     <img
-                      class="w-full max-lg:max-w-xs"
+                      className="w-full max-lg:max-w-xs"
                       src="https://cubezix.com/wp-content/uploads/2024/09/PriorityCircleslow-scaled.webp"
                       alt=""
                     />
                   </div>
                 </div>
               </div>
-              <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
             </div>
 
-            <div class="relative ">
-              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+            <div className="relative ">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     Powerful APIs
                   </p>
-                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                     Sit quis amet rutrum tellus ullamcorper ultricies libero
                     dolor eget sem sodales gravida.
                   </p>
                 </div>
-                <div class="relative lg:pb-7 pb-2 w-full grow">
-                  {/* <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl"> */}
-                  {/* <div class="flex bg-gray-800/40 ring-1 ring-white/5">
-                <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
-                  <div class="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
-                  <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                <div className="relative lg:pb-7 pb-2 w-full grow">
+                  {/* <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl"> */}
+                  {/* <div className="flex bg-gray-800/40 ring-1 ring-white/5">
+                <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
+                  <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
+                  <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
                 </div>
               </div> */}
-                  <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                  <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                     <img
-                      class="w-full max-lg:max-w-xs"
+                      className="w-full max-lg:max-w-xs"
                       src="https://cubezix.com/wp-content/uploads/2024/09/PriorityCirclesHigh-01-scaled.webp"
                       alt=""
                     />
@@ -828,18 +828,18 @@ export const IThomePage = () => {
               </div>
               {/* </div> */}
 
-              <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="">
-        <div class="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:gap-x-20 lg:px-24 lg:pt-0">
+      <div className="">
+        <div className="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:gap-x-20 lg:px-24 lg:pt-0">
             <svg
               viewBox="0 0 1024 1024"
-              class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+              className="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
               aria-hidden="true"
             >
               <circle
@@ -856,27 +856,27 @@ export const IThomePage = () => {
                 </radialGradient>
               </defs>
             </svg>
-            <div class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 class=" text-base/7 font-semibold text-indigo-600 tracking-[.35em] mb-3 uppercase">
+            <div className="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+              <h2 className=" text-base/7 font-semibold text-indigo-600 tracking-[.35em] mb-3 uppercase">
                 Ready To Unlock Your IT AMC Plan?
               </h2>
-              <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                 Managed IT AMC Service Provider in Dubai
               </h2>
 
-              <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start pl-6">
+              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start pl-6">
                 <a
                   href="/"
-                  class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Get started
                 </a>
-                <a href="/" class="text-sm/6 font-semibold text-white">
+                <a href="/" className="text-sm/6 font-semibold text-white">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
 
-              <p class="mt-6 text-pretty text-lg/8 text-gray-300">
+              <p className="mt-6 text-pretty text-lg/8 text-gray-300">
                 Every company that leverages IT and cloud infrastructure to
                 manage their operations requires a proactive, reliable, and
                 experienced IT Annual Maintenance Contract (AMC) provider in
@@ -888,15 +888,15 @@ export const IThomePage = () => {
 
               <hr className="mt-10" />
 
-              <div class=" pt-10 sm:pt-10">
-                <div class=" max-w-7xl">
-                  <div class=" mt-10 max-w-2xl sm:mt-10 lg:mt-2 lg:max-w-5xl">
-                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-16">
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+              <div className=" pt-10 sm:pt-10">
+                <div className=" max-w-7xl">
+                  <div className=" mt-10 max-w-2xl sm:mt-10 lg:mt-2 lg:max-w-5xl">
+                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-16">
+                      <div className="relative pl-14">
+                        <dt className="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
+                          <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                             <svg
-                              class="size-6 text-white"
+                              className="size-6 text-white"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke-width="1.5"
@@ -914,11 +914,11 @@ export const IThomePage = () => {
                           Network Support
                         </dt>
                       </div>
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                      <div className="relative pl-14">
+                        <dt className="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
+                          <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                             <svg
-                              class="size-6 text-white"
+                              className="size-6 text-white"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke-width="1.5"
@@ -936,11 +936,11 @@ export const IThomePage = () => {
                           Dedicated IT Support Engineer
                         </dt>
                       </div>
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                      <div className="relative pl-14">
+                        <dt className="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5 text-left">
+                          <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                             <svg
-                              class="size-6 text-white"
+                              className="size-6 text-white"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke-width="1.5"
@@ -964,9 +964,9 @@ export const IThomePage = () => {
               </div>
             </div>
 
-            <div class="relative mt-16 h-80 lg:mt-8">
+            <div className="relative mt-16 h-80 lg:mt-8">
               <img
-                class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src="https://cubezix.com/wp-content/uploads/2024/02/IT-AMC.webp"
                 alt="App screenshot"
                 width="1824"

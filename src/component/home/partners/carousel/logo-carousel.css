@@ -1,17 +1,21 @@
-.logo-carousel {
-}
-.carousel-logo {
+/* .logo-carousel {
+} */
+/* .carousel-logo { */
   /* background-color: white; */
-}
-.carousel {
+/* } */
+/* .carousel {
+} */
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite; /* Animation */
 }
 
-@keyframes slide {
+@keyframes infinite-scroll {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Adjust this value! */
   }
 }
 

@@ -1,0 +1,55 @@
+.box-h {
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .grid {
+    margin: auto;
+    max-width: 99vw;
+  }
+  .boxes {
+    color: #fff;
+    height: 300px;
+    overflow: hidden;
+  }
+  .office-automation {
+    padding: 50px;
+    text-align: center;
+    background-color: #282828;
+  }
+  .Data-Centre-Solutions {
+    padding: 50px;
+    text-align: center;
+    background-color: #282828;
+  }
+  .boxes img {
+    width: 100%;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 1045px) {
+  }
+  
+  @media screen and (max-width: 700px) {
+    .boxes {
+      color: #fff;
+      height: 200px;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .boxes {
+      color: #fff;
+      height: 150px;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 330px) {
+    .boxes {
+      color: #fff;
+      height: 100px;
+      overflow: hidden;
+    }
+  }  

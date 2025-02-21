@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./partner.css";
+import "./partner.css";
 import LogoSlider from "./carousel/logo-carousel";
 
 export class Partners extends Component {
