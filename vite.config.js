@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/onetech-0/",
+  base: "/onetech-0",
 })
