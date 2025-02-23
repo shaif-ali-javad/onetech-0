@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "./home/navbar/navbar.jsx";
+import Navbar from "./home/navbar/header.jsx";
 import ServicesPage from "./framer-m.jsx";
 import Services1 from "./home/services1/services.jsx";
 import Services2 from "./home/services2/services.jsx";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import Navbar from "./home/navbar/header.jsx";
 import About from "./about/about.jsx";
-import Navbar from "./home/navbar/navbar";
 import Footer from "./home/footer/footer";
 
 export class about extends Component {
