@@ -1,5 +1,9 @@
 import * as React from "react";
+import "./navbar.css"
 import { NavLink, useLocation } from "react-router-dom";
+
+import logo from "./image/Artboard 1@00x.png";
+
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -25,10 +29,6 @@ const services = {
 { name: "ICT Solutions", href: "/ictsolutions" },
 { name: "New Office IT Setup", href: "/newofficeitsetup" },
 ],
-Outsourcing: [
-{ name: "IT Outsourcing", href: "/itoutsourcing" },
-{ name: "BPO Outsourcing", href: "/bpooutsourcing" },
-],
 "IT Infrastructure": [
 { name: "VPN Solutions", href: "/vpnsolutions" },
 { name: "Data Backup & Disaster Recovery", href: "/databackupdisasterrecoveryservices" },
@@ -45,6 +45,10 @@ Outsourcing: [
 { name: "Telephone Solutions", href: "/telephonesolutions" },
 { name: "SIRA Approved CCTV Installation", href: "/siraapprovedcctvinstallation" },
 ],
+Outsourcing: [
+{ name: "IT Outsourcing", href: "/itoutsourcing" },
+{ name: "BPO Outsourcing", href: "/bpooutsourcing" },
+],
 Computer: [{ name: "Computer", href: "/computer" }],
 };
 
@@ -53,7 +57,7 @@ const pathname = useLocation();
 const [isOpen, setIsOpen] = React.useState(false);
 
 return (
-<header className="sticky top-0 z-50 w-full border-b bg-white"> {/* bg-white for white background */}
+<header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm"> {/* bg-white for white background */}
 <div className="container flex h-16 items-center">
 <Sheet open={isOpen} onOpenChange={setIsOpen}>
 <SheetTrigger asChild>
@@ -62,6 +66,11 @@ variant="ghost"
 className="mr-2 px-0 text-base hover:bg-white focus-visible:bg-white focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
 >
 <Menu className="h-6 w-6" />
+<span className="ml-2 text-xl font-bold text-gray-900 fixed left-1/2 transform -translate-x-1/2">
+    <a href="/">
+                <img src={logo} className="logo" alt="logo" />
+              </a>
+</span>
 <span className="sr-only">Toggle menu</span>
 </Button>
 </SheetTrigger>
@@ -69,7 +78,11 @@ className="mr-2 px-0 text-base hover:bg-white focus-visible:bg-white focus-visib
 <SheetHeader className="p-4 border-b">
 <SheetTitle className="flex items-center">
 <span className="h-6 w-6 rounded-lg bg-primary" />
-<span className="ml-2 text-xl font-bold">Logo</span>
+<span className="ml-2 text-xl font-bold text-gray-900">
+    <a href="/">
+            <img src={logo} className="logo" alt="logo" />
+          </a>
+          </span>
 </SheetTitle>
 </SheetHeader>
 <div className="flex flex-col">
@@ -131,7 +144,11 @@ CONTACT US
 </Sheet>
 <NavLink href="/" className="mr-6 hidden items-center md:flex">
 <span className="h-6 w-6 rounded-lg bg-primary" />
-<span className="ml-2 text-xl font-bold">Logo</span>
+<span className="ml-2 text-xl font-bold text-gray-900">
+    <a href="/">
+                <img src={logo} className="logo" alt="logo" />
+              </a>
+</span>
 </NavLink>
 <div className="hidden md:flex md:flex-1 ">
 <NavigationMenu >
@@ -149,9 +166,9 @@ HOME
 </NavLink>
 </NavigationMenuItem>
 <NavigationMenuItem>
-<NavigationMenuTrigger>SERVICES</NavigationMenuTrigger>
-<NavigationMenuContent className="bg-white">
-<div className="grid w-[800px] grid-cols-5 gap-3 p-4 ">
+<NavigationMenuTrigger className="m-auto">SERVICES</NavigationMenuTrigger>
+<NavigationMenuContent className="bg-white m-auto">
+<div className="grid w-[700px] grid-cols-5 lg-grid-cols-4 gap-3 p-4">
 {Object.entries(services).map(([category, items]) => (
 <div key={category} className="space-y-2">
 <h4 className="text-sm font-medium leading-none text-black border-b-2 border-b-gray-900 pb-4">{category}</h4>
