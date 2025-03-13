@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/onetech-0",
+  base: "https://www.onetechuae.com/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
