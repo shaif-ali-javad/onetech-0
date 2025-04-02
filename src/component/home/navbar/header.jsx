@@ -119,6 +119,7 @@ className="block px-6 py-2 text-sm transition-colors hover:bg-gray-100 hover:tex
 </AccordionItem>
 ))}
 </Accordion>
+<a href="/about">ABOUT US</a>
 <NavLink
 href="/about"
 onClick={() => setIsOpen(false)}
@@ -127,7 +128,6 @@ className={cn(
 pathname === "/about" && "bg-gray-100", /* Using gray-100 for active */
 )}
 >
-ABOUT US
 </NavLink>
 <NavLink
 href="/contact"
@@ -189,6 +189,7 @@ className="block select-none rounded-md p-2 text-xs leading-none no-underline ou
 </div>
 </NavigationMenuContent>
 </NavigationMenuItem>
+<a href="/about">ABOUT US</a>
 <NavigationMenuItem>
 <NavLink href="/about" legacyBehavior passHref>
 <NavigationMenuLink
@@ -197,10 +198,10 @@ className={cn(
 pathname === "/about" && "bg-gray-50",
 )}
 >
-ABOUT US
 </NavigationMenuLink>
 </NavLink>
 </NavigationMenuItem>
+<a href="/contact">CONTACT US</a>
 <NavigationMenuItem>
 <NavLink href="/contact" legacyBehavior passHref>
 <NavigationMenuLink
@@ -209,7 +210,6 @@ className={cn(
 pathname === "/contact" && "bg-gray-50",
 )}
 >
-CONTACT US
 </NavigationMenuLink>
 </NavLink>
 </NavigationMenuItem>

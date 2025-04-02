@@ -85,7 +85,7 @@ const Computer = lazy(() => import("./component/services/computer/computer.jsx")
 
 function App() {
   return (
-    <>
+    <>  
       <Router>
         <Suspense fallback={<h1>loading.....</h1>}>
           <Routes>
