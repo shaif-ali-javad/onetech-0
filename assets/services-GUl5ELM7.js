@@ -1,1 +1,0 @@
-import{r as s,j as r,F as e}from"./index-Bv_OlU0w.js";import{IThomePage as o}from"./it-amc-BirVcum-.js";import{N as t}from"./navbar-BMR1oa3b.js";class n extends s.Component{render(){return r.jsxs("div",{children:[r.jsx(t,{}),r.jsx(o,{}),r.jsx(e,{})]})}}export{n as default,n as services};
