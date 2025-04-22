@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./home/navbar/navbar";
+import Navbar from "./home/navbar/header.jsx";
 import Footer from "./home/footer/footer";
 import Contact from "./contact/contact.jsx";
 

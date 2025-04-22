@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import LogoSlider from "../../home/partners/carousel/logo-carousel";
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/outline';
-import Navbar from "../../home/navbar/navbar";
+import Navbar from "../../home/navbar/header";
 import Footer from "../../home/footer/footer";
 
 export const IThomePage = () => {

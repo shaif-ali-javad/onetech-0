@@ -5,7 +5,7 @@ import Footer from "./home/footer/footer";
 
 export class about extends Component {
   render() {
-    return (
+    return (  
       <div>
         <Navbar />
         <About />

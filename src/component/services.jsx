@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Itservice from "./services/it-service/it-amc.jsx";
-import Navbar from "./home/navbar/navbar";
+import Navbar from "./home/navbar/header.jsx";
 import Footer from "./home/footer/footer";
 
 export class services extends Component {
