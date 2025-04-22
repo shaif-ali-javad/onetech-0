@@ -79,7 +79,7 @@ const About = () => {
       <div className="whatsapp-button fixed bottom-8 right-8 z-50">
         <a href="https://wa.me/971504153141" className="hover:scale-110 transition-transform inline-block">
           <img
-            className="w-14 h-14 drop-shadow-lg"
+            className="w-20 drop-shadow-lg"
             src={whatsappLogo}
             alt="Contact us on WhatsApp"
           />
