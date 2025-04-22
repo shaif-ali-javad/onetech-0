@@ -233,7 +233,7 @@ export const Contact = () => {
                 className="inline-block"
               >
                 <img
-                  src="image/WhatsApp-logo.png"
+                  src={whatsappLogo}
                   alt="WhatsApp"
                   className="h-16 w-auto"
                 />
