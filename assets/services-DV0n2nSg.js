@@ -1,0 +1,1 @@
+import{r,j as s,M as e,F as o}from"./index-BwldbDe4.js";import{IThomePage as t}from"./it-amc-TW22mPp2.js";import"./ChevronUpIcon-B741MfyS.js";class n extends r.Component{render(){return s.jsxs("div",{children:[s.jsx(e,{}),s.jsx(t,{}),s.jsx(o,{})]})}}export{n as default,n as services};
