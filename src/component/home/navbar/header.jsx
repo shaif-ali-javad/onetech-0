@@ -91,7 +91,7 @@ to="/"
 onClick={() => setIsOpen(false)}
 className={cn(
 "px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100", /* Using gray-100 for hover */
-pathname === "/" && "bg-gray-100", /* Using gray-100 for active */
+pathname === "/" && "border-b-2 border-blue-900", /* Using gray-100 for active */
 )}
 >
 HOME
@@ -124,7 +124,7 @@ to="/about"
 onClick={() => setIsOpen(false)}
 className={cn(
 "px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100", /* Using gray-100 for hover */
-pathname === "/about" && "bg-gray-100", /* Using gray-100 for active */
+pathname === "/about" && "border-b-2 border-blue-900", /* Using gray-100 for active */
 )}
 >
 ABOUT US
@@ -134,7 +134,7 @@ to="/contact"
 onClick={() => setIsOpen(false)}
 className={cn(
 "px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100", /* Using gray-100 for hover */
-pathname === "/contact" && "bg-gray-100", /* Using gray-100 for active */
+pathname === "/contact" && "border-b-2 border-blue-900", /* Using gray-100 for active */
 )}
 >
 CONTACT US
@@ -154,7 +154,10 @@ CONTACT US
 <NavigationMenu >
 <NavigationMenuList >
 <NavigationMenuItem >
-<Link to="/" className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100">
+<Link to="/" className={cn(
+"group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100",
+pathname.pathname === "/" && "border-b-2 border-blue-900"
+)}>
 HOME
 </Link>
 </NavigationMenuItem>
@@ -171,7 +174,10 @@ HOME
 <Link
 key={item.href}
 to={item.href}
-className="block select-none rounded-md p-2 text-xs leading-none no-underline outline-none transition-colors hover:bg-gray-100 hover:text-accent-foreground focus:bg-gray-100 focus:text-accent-foreground"
+className={cn(
+"block select-none p-2 text-xs leading-none outline-none transition-colors hover:bg-gray-100 hover:text-accent-foreground focus:bg-gray-100 focus:text-accent-foreground",
+pathname.pathname === item.href && "border-b-2 border-blue-900"
+)}
 >
 {item.name}
 </Link>
@@ -183,12 +189,18 @@ className="block select-none rounded-md p-2 text-xs leading-none no-underline ou
 </NavigationMenuContent>
 </NavigationMenuItem>
 <NavigationMenuItem>
-<Link to="/about" className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100">
+<Link to="/about" className={cn(
+"group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100",
+pathname.pathname === "/about" && "border-b-2 border-blue-900"
+)}>
 ABOUT US
 </Link>
 </NavigationMenuItem>
 <NavigationMenuItem>
-<Link to="/contact" className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100">
+<Link to="/contact" className={cn(
+"group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100",
+pathname.pathname === "/contact" && "border-b-2 border-blue-900"
+)}>
 CONTACT US
 </Link>
 </NavigationMenuItem>
