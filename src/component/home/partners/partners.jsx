@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./partner.css";
 import LogoSlider from "./carousel/logo-carousel";
+import whatsappLogo from "../../../assets/image/WhatsApp-logo.png";
 
 export class Partners extends Component {
   render() {
@@ -39,7 +40,7 @@ export class Partners extends Component {
             <img
               id="whatsapp"
               height="40px"
-              src="image/WhatsApp-logo.png"
+              src={whatsappLogo}
               alt=""
               width={100}
             />
