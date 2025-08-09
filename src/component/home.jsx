@@ -15,7 +15,7 @@ function Home() {
       <Services1 />
       <Services2 />
       <Partners />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
