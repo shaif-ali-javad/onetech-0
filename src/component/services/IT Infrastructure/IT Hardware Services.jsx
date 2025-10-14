@@ -15,36 +15,36 @@ export const IThomePage = () => {
         "IT Hardware Services refer to the provision, installation, maintenance, and repair of physical components of IT infrastructure, such as computers, servers, routers, switches, storage devices, and other equipment needed for business operations.",
     },
     {
-      question: "What IT hardware services does CubeZix provide in Dubai?",
+      question: "What IT hardware services does Onetech provide in Dubai?",
       answer:
-        "CubeZix offers a comprehensive range of IT hardware services, including: <br/> <br/> Procurement of IT hardware (computers, servers, printers, etc.) <br/> Installation and setup of hardware systems <br/> Maintenance and troubleshooting of IT equipment <br/> Upgrading outdated hardware systems <br/> IT asset management and lifecycle services <br/> Repair and replacement of damaged hardware components",
+        "Onetech offers a comprehensive range of IT hardware services, including: <br/> <br/> Procurement of IT hardware (computers, servers, printers, etc.) <br/> Installation and setup of hardware systems <br/> Maintenance and troubleshooting of IT equipment <br/> Upgrading outdated hardware systems <br/> IT asset management and lifecycle services <br/> Repair and replacement of damaged hardware components",
     },
     {
-      question: "How does CubeZix help with IT hardware procurement?",
+      question: "How does Onetech help with IT hardware procurement?",
       answer:
-        "CubeZix partners with leading hardware manufacturers and vendors to provide businesses with high-quality IT equipment at competitive prices. We assist with selecting the right hardware based on your business needs, ensuring that it integrates seamlessly with your existing infrastructure.",
-    },
-    {
-      question:
-        "What is included in CubeZix's IT hardware maintenance services?",
-      answer:
-        "CubeZix provides regular hardware maintenance services that include: <br/> <br/> Routine inspections and diagnostics <br/> Performance monitoring of IT systems <br/> Preventive maintenance to avoid breakdowns <br/> Repairs and replacements of faulty components <br/> Software and firmware updates to ensure compatibility",
+        "Onetech partners with leading hardware manufacturers and vendors to provide businesses with high-quality IT equipment at competitive prices. We assist with selecting the right hardware based on your business needs, ensuring that it integrates seamlessly with your existing infrastructure.",
     },
     {
       question:
-        "Can CubeZix assist with IT hardware relocation during office moves?",
+        "What is included in Onetech's IT hardware maintenance services?",
       answer:
-        "Yes, CubeZix offers hardware relocation services to ensure a smooth transition of your IT infrastructure during office moves. We safely dismantle, transport, and reinstall all hardware components, minimizing downtime and ensuring your operations resume quickly.",
+        "Onetech provides regular hardware maintenance services that include: <br/> <br/> Routine inspections and diagnostics <br/> Performance monitoring of IT systems <br/> Preventive maintenance to avoid breakdowns <br/> Repairs and replacements of faulty components <br/> Software and firmware updates to ensure compatibility",
     },
     {
-      question: "Can CubeZix help with IT hardware upgrades?",
+      question:
+        "Can Onetech assist with IT hardware relocation during office moves?",
       answer:
-        "Yes, CubeZix assists businesses in upgrading their hardware systems to ensure they stay up-to-date with the latest technologies. We evaluate your existing setup, recommend appropriate upgrades, and perform seamless transitions to new hardware without disrupting operations.",
+        "Yes, Onetech offers hardware relocation services to ensure a smooth transition of your IT infrastructure during office moves. We safely dismantle, transport, and reinstall all hardware components, minimizing downtime and ensuring your operations resume quickly.",
     },
     {
-      question: "Does CubeZix offer custom hardware solutions for businesses?",
+      question: "Can Onetech help with IT hardware upgrades?",
       answer:
-        "Yes, CubeZix offers tailored IT hardware solutions based on your specific requirements. We assess your current setup and provide customized hardware systems that support your operations, whether for a small office or large enterprise.",
+        "Yes, Onetech assists businesses in upgrading their hardware systems to ensure they stay up-to-date with the latest technologies. We evaluate your existing setup, recommend appropriate upgrades, and perform seamless transitions to new hardware without disrupting operations.",
+    },
+    {
+      question: "Does Onetech offer custom hardware solutions for businesses?",
+      answer:
+        "Yes, Onetech offers tailored IT hardware solutions based on your specific requirements. We assess your current setup and provide customized hardware systems that support your operations, whether for a small office or large enterprise.",
     },
   ];
 
@@ -59,7 +59,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -67,7 +67,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -75,7 +75,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -138,7 +138,7 @@ export const IThomePage = () => {
                 Comprehensive Solutions for All Your IT Hardware Needs
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
-                CubeZix offers expert IT hardware services, ensuring optimal
+                Onetech offers expert IT hardware services, ensuring optimal
                 performance and support for your technology infrastructure in
                 Dubai.
               </p>
@@ -482,13 +482,13 @@ export const IThomePage = () => {
               <div class="lg:pr-4">
                 <div class="lg:max-w-lg">
                   <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
-                    Why Choose CubeZix for IT Solutions?
+                    Why Choose Onetech for IT Solutions?
                   </p>
                   <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">
                     Expert IT Services and Exclusive Benefits for Your Business
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    Partner with CubeZix for top-tier IT services, leveraging
+                    Partner with Onetech for top-tier IT services, leveraging
                     our expertise, vendor relationships, and comprehensive
                     solutions to drive results.
                   </p>
@@ -527,7 +527,7 @@ export const IThomePage = () => {
                       <strong class="font-semibold text-gray-800">
                         Full-Service IT Provider
                       </strong>
-                      <br /> CubeZix offers complete IT solutions, combining
+                      <br /> Onetech offers complete IT solutions, combining
                       expert services with strong vendor relationships to
                       deliver exceptional results for our clients.
                     </span>
@@ -656,7 +656,7 @@ export const IThomePage = () => {
                         Comprehensive IT Lifecycle Management
                       </strong>
                       <br />
-                      Beyond procurement, CubeZix manages setup, distribution,
+                      Beyond procurement, Onetech manages setup, distribution,
                       maintenance, and end-of-life disposal, allowing you to
                       focus on your core business.
                     </span>
@@ -761,7 +761,7 @@ export const IThomePage = () => {
                 IT Hardware Solutions
               </h2>
               <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Why Partner with CubeZix?
+                Why Partner with Onetech?
               </h2>
 
               <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start pl-6">

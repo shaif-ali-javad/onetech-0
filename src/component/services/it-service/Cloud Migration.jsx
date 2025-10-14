@@ -12,14 +12,14 @@ export const IThomePage = () => {
   const faqs = [
     {
       question: "What are Cloud Management Services?",
-      answer: "<span class='text-base/7 font-semibold text-indigo-600'> Cloud Management </span> refers to monitoring & optimizing a business’s complete cloud infrastructure, including: <br/> <br/><span class='text-base/7 font-semibold text-indigo-600'> Storage </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Applications </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Network Resources </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> System Integrations </span> <br/> At CubeZix, we ensure your cloud infrastructure operates efficiently and can meet your increased scale and performance requirements over time."
+      answer: "<span class='text-base/7 font-semibold text-indigo-600'> Cloud Management </span> refers to monitoring & optimizing a business’s complete cloud infrastructure, including: <br/> <br/><span class='text-base/7 font-semibold text-indigo-600'> Storage </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Applications </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Network Resources </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> System Integrations </span> <br/> At Onetech, we ensure your cloud infrastructure operates efficiently and can meet your increased scale and performance requirements over time."
     },
     {
-      question: "What’s included in CubeZix’s cloud management services?",
+      question: "What’s included in Onetech’s cloud management services?",
       answer: "We offer a comprehensive list of services as part of our cloud management offerings, these include: <br/> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Cloud Setup </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Monitoring Services </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Performance Optimization </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Security Management </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Data Backup & Recovery </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Compliance </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Cost Management </span> <br/> Beyond this, our team also provides regular maintenance & 24/7 support ensuring smooth business operations."
     },
     {
-      question: "How does CubeZix ensure the security of cloud environments?",
+      question: "How does Onetech ensure the security of cloud environments?",
       answer: "In order to ensure your data remains secure, we utilize various advanced security measures including: <br/> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Firewalls </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Data Encryption </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Multi-Factor Authentication (MFA) </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Regular Security Patches </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Continuous Monitoring </span> <br/> Additionally, all of our deployed systems are compliant with industry regulations and standards."
     },
     {
@@ -31,8 +31,8 @@ export const IThomePage = () => {
       answer: "Our deployed systems are equipped with robust backup and recovery options to ensure quick recovery. We regularly maintain secure backups of your data and can have you back up and running before you know it."
     },
     {
-      question: "How does CubeZix provide ongoing cloud support?",
-      answer: "At CubeZix, we offer 24/7 support services so that your cloud services run smoothly and in case something does happen, our expert team is always available for troubleshooting, optimizing, or maintenance as per your requirements."
+      question: "How does Onetech provide ongoing cloud support?",
+      answer: "At Onetech, we offer 24/7 support services so that your cloud services run smoothly and in case something does happen, our expert team is always available for troubleshooting, optimizing, or maintenance as per your requirements."
     }
   ];
 
@@ -50,7 +50,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -58,7 +58,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -66,7 +66,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -118,7 +118,7 @@ export const IThomePage = () => {
             </div>
             <div className="text-center">
               <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">Full Access to Expert Cloud Management Solutions</h1>
-              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Partner with CubeZix for complete cloud management services, ensuring seamless, efficient, and secure cloud computing.</p>
+              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Partner with Onetech for complete cloud management services, ensuring seamless, efficient, and secure cloud computing.</p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a href="/" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
                 <a href="/" className="text-sm/6 font-semibold text-gray-800">Learn more <span aria-hidden="true">→</span></a>
@@ -138,7 +138,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Expert 24/7 Cloud Management Services in Dubai</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">Seamless Support for All Your Cloud Computing Needs</p>
-      <p class="mt-6 text-lg/8 text-gray-600">CubeZix offers 24/7 cloud management services, ensuring optimal performance, security, and support for your cloud infrastructure in Dubai.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Onetech offers 24/7 cloud management services, ensuring optimal performance, security, and support for your cloud infrastructure in Dubai.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -296,9 +296,9 @@ export const IThomePage = () => {
     <div class="lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 pt-8">
       <div class="lg:pr-4">
         <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">CubeZix Cloud Management Services</p>
+          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Onetech Cloud Management Services</p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-4xl">Optimize Your Cloud Infrastructure with Expert Management and Support</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">CubeZix provides expert cloud management services, ensuring seamless integration, access, and optimization for your cloud-based infrastructure.</p>
+          <p class="mt-6 text-xl/8 text-gray-600">Onetech provides expert cloud management services, ensuring seamless integration, access, and optimization for your cloud-based infrastructure.</p>
         </div>
       </div>
     </div>

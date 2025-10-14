@@ -18,7 +18,7 @@ export const IThomePage = () => {
       question:
         "How do I know if my current IT infrastructure needs an upgrade?",
       answer:
-        "Most businesses should regularly consider an IT Infrastructure upgrade every 2-3 years to remain up to date with the latest technologies and solutions. As a general rule, if your business infrastructure faces regular downtime, sluggish performance, outdated equipment and basically struggling with evolving user demands, then it's time to look into upgrading your IT Infrastructure. <br/> <br/> The CubeZix Team also provides infrastructure audits to determine the performance of your current systems and recommend improvements as per your pain points.",
+        "Most businesses should regularly consider an IT Infrastructure upgrade every 2-3 years to remain up to date with the latest technologies and solutions. As a general rule, if your business infrastructure faces regular downtime, sluggish performance, outdated equipment and basically struggling with evolving user demands, then it's time to look into upgrading your IT Infrastructure. <br/> <br/> The Onetech Team also provides infrastructure audits to determine the performance of your current systems and recommend improvements as per your pain points.",
     },
     {
       question: "Why is a strong IT infrastructure important for my business?",
@@ -26,18 +26,18 @@ export const IThomePage = () => {
         "Strong IT Infrastructure practically pays for itself by providing smooth operation, data management and security, clear communication and consistent connectivity. It also allows you to improve business productivity and provides security to your business against a number of potential threats.",
     },
     {
-      question: "How can CubeZix help with IT Infrastructure?",
+      question: "How can Onetech help with IT Infrastructure?",
       answer:
         "Our team offers complete end-to-end IT Infrastructure services consisting of the design, installation, and maintenance of your IT Systems. We even offer custom infrastructure solutions that are tailor-made to address your unique business needs, ranging from network design, server setup, cloud services, and data security just to name a few.",
     },
     {
-      question: "Can CubeZix help design a scalable IT infrastructure?",
+      question: "Can Onetech help design a scalable IT infrastructure?",
       answer:
         "Indeed, we understand that businesses are evolving entities, where yesterday’s solutions are not always enough for the needs of tomorrow, that is why every infrastructure solution we design is made with scalability in mind, easily allowing you to increase users, services, or capacity without any major disruptions to your business.",
     },
     {
       question:
-        "Can CubeZix help with compliance and regulations in IT infrastructure?",
+        "Can Onetech help with compliance and regulations in IT infrastructure?",
       answer:
         "Yes, all our infrastructure products and solutions adhere to the appropriate industry standards and regulations. Our compliance-first approach to infrastructure ensures that your data remains safe and protected against any potential issues down the road.",
     },
@@ -54,7 +54,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -70,7 +70,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -178,7 +178,7 @@ export const IThomePage = () => {
             <p class="mt-6 text-lg/8 text-gray-600">
               A strong IT infrastructure is crucial for your business’s success,
               serving as the backbone that ensures efficiency in today’s
-              competitive market. At CubeZix, we stay ahead of the latest IT
+              competitive market. At Onetech, we stay ahead of the latest IT
               infrastructure advancements to provide you with the ideal setup.
               <br />
               <br />
@@ -188,7 +188,7 @@ export const IThomePage = () => {
               </span>
               , catering to both small and large enterprises. Whether you need
               expert advice on your IT infrastructure or require comprehensive
-              management of its various components, CubeZix has you covered.
+              management of its various components, Onetech has you covered.
             </p>
           </div>
           <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -709,7 +709,7 @@ export const IThomePage = () => {
               </div>
 
               <p class="mt-6 text-pretty text-lg/8 text-gray-300">
-                At CubeZix, we provide comprehensive IT infrastructure solutions
+                At Onetech, we provide comprehensive IT infrastructure solutions
                 tailored to meet the unique needs of your business. Our services
                 ensure that your IT operations run smoothly, efficiently, and
                 securely. These components work together to provide a stable and

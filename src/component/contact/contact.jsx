@@ -84,8 +84,8 @@ export const Contact = () => {
                 {[
                   { icon: "📞", title: "Phone", value: "+971-50-415-3141" },
                   { icon: "☎️", title: "Landline", value: "044-21242124" },
-                  { icon: "📧", title: "Email", value: "support@onetechae.com" },
-                  { icon: "📍", title: "Address", value: "Office 408, koko building, near Naif intersection bus station, Dubai, UAE" }
+                  { icon: "📧", title: "Email", value: "sales@onetechuae.com" },
+                  { icon: "📍", title: "Address", value: "G11, Madina Mall, Muhaisnah 4, P.O Box: 120735 Dubai-UAE" }
                 ].map((item, index) => (
                   <motion.div
                     key={index}

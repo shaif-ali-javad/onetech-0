@@ -10,7 +10,7 @@ export const IThomePage = () => {
 
   const faqs = [
     {
-      question: "What is included in CubeZix’s CCTV installation services?",
+      question: "What is included in Onetech’s CCTV installation services?",
       answer:
         "As part of our <span class=' font-semibold text-indigo-600'> CCTV Services</span>, we provide system design, installation, wiring, and network setups, security system integration as well as provide detailed training on how to utilize the system. Additionally, we’ll also provide ongoing maintenance &amp; support for the installed system.",
     },
@@ -20,7 +20,7 @@ export const IThomePage = () => {
         "Security is our number one priority, and in order to achieve this we utilize encrypted storage solutions (on-site or cloud-based, depending upon various factors). Additionally, we implement an access-control system to ensure that only authorized personnel can check or download the footage.",
     },
     {
-      question: "Will CubeZix help with compliance for CCTV installations?",
+      question: "Will Onetech help with compliance for CCTV installations?",
       answer:
         "Indeed, our team ensures that the installation of your CCTV is compliant with local regulations and data privacy laws, such as making sure that the proper signage is being utilized and the security footage is stored and handled securely. Our CCTV Services are also <span class=' font-semibold text-indigo-600'> SIRA Approved</span> for added peace of mind.",
     },
@@ -35,14 +35,14 @@ export const IThomePage = () => {
         "Yes, our team provides ongoing maintenance services which include system checks at regular intervals, firmware updates, troubleshooting, and repairs, if required. We strive to ensure peak performance, with minimal downtime for all our CCTV Installations.",
     },
     {
-      question: "Does Cubezix offer upgrades for existing CCTV systems?",
+      question: "Does Onetech offer upgrades for existing CCTV systems?",
       answer:
-        "Yes, Cubezix can upgrade your current CCTV system, enhancing its capabilities with features like HD video quality, night vision, and remote monitoring.",
+        "Yes, Onetech can upgrade your current CCTV system, enhancing its capabilities with features like HD video quality, night vision, and remote monitoring.",
     },
     {
       question: "How do I know which CCTV system is right for my property?",
       answer:
-        "Cubezix’s security experts will assess your property and recommend a CCTV solution based on your security concerns, coverage requirements, and budget.",
+        "Onetech’s security experts will assess your property and recommend a CCTV solution based on your security concerns, coverage requirements, and budget.",
     },
   ];
 
@@ -57,7 +57,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -65,7 +65,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -73,7 +73,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -483,7 +483,7 @@ export const IThomePage = () => {
                     Expert SIRA-Approved CCTV Solutions for Every Need
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    CubeZix offers SIRA-approved{" "}
+                    Onetech offers SIRA-approved{" "}
                     <span class=" font-semibold text-indigo-600">
                       CCTV installation and maintenance in Dubai
                     </span>

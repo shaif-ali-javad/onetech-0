@@ -19,15 +19,15 @@ export const IThomePage = () => {
       answer: "In today’s data-driven world, Firewalls are essential for any business big or small, as they provide several benefits including but not limited to: <br/> <br/> <span class=' font-semibold text-indigo-600'> Cybersecurity</span> <br/> <span class=' font-semibold text-indigo-600'> Network Monitoring</span> <br/> <span class=' font-semibold text-indigo-600'> Traffic Control</span> <br/> <span class=' font-semibold text-indigo-600'> Data Protection</span> <br/> <span class=' font-semibold text-indigo-600'> Access Control</span> <br/> <span class=' font-semibold text-indigo-600'> Industry Regulation Compliance</span>"
     },
     {
-      question: "Can CubeZix manage and monitor my firewall after installation?",
+      question: "Can Onetech manage and monitor my firewall after installation?",
       answer: "Indeed, we provide active firewall management as well as monitoring services which include: <br/> <br/> <span class=' font-semibold text-indigo-600'> Continuous Traffic Monitoring</span> <br/> <span class=' font-semibold text-indigo-600'> Potential Threat Detection</span> <br/> <span class=' font-semibold text-indigo-600'> Security Updates</span> <br/> <span class=' font-semibold text-indigo-600'> Performance Optimization</span>"
     },
     {
-      question: "Can CubeZix help with firewall upgrades or replacements?",
+      question: "Can Onetech help with firewall upgrades or replacements?",
       answer: "Yes, in the event that your installed firewall is outdated or not able to meet your business’s requirements then our team of experts can help upgrade or even replace your firewall by evaluating your current network infrastructure & providing recommendations in order to improve your network’s security."
     },
     {
-      question: "How does CubeZix provide support for firewall issues?",
+      question: "How does Onetech provide support for firewall issues?",
       answer: "We offer complete end-to-end support on any firewall-related issues such as  <br/> <br/> <span class=' font-semibold text-indigo-600'> Troubleshoot Security Incidents </span> <br/> <span class=' font-semibold text-indigo-600'> Configuration Management </span> <br/> <span class=' font-semibold text-indigo-600'> Performance Optimization </span> <br/> <br/> Our team strives to ensure that your firewall runs efficiently and your business remains protected round the clock."
     }
   ];
@@ -46,7 +46,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -54,7 +54,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -134,7 +134,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Secure and Optimize Your Network</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">Firewall Configuration Service in Dubai</p>
-      <p class="mt-6 text-lg/8 text-gray-600">CubeZix provides top-notch <span class=" font-semibold text-indigo-600">firewall configuration in Dubai</span>, safeguarding your business from hackers and online threats.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Onetech provides top-notch <span class=" font-semibold text-indigo-600">firewall configuration in Dubai</span>, safeguarding your business from hackers and online threats.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -294,7 +294,7 @@ export const IThomePage = () => {
         <div class="lg:max-w-lg">
           <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Expert Firewall Solutions</p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">Professional Firewall Installation Services in Dubai</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">CubeZix offers expert firewall installation and configuration in Dubai, ensuring top-notch protection and performance.</p>
+          <p class="mt-6 text-xl/8 text-gray-600">Onetech offers expert firewall installation and configuration in Dubai, ensuring top-notch protection and performance.</p>
         </div>
       </div>
     </div>
@@ -323,7 +323,7 @@ export const IThomePage = () => {
                 strokeLinejoin="round"
                 d="M5 13l4 4L19 7" />
               </svg>
-              <span><strong class="font-semibold text-gray-800">Comprehensive Firewall Setup</strong><br/> CubeZix ensures your firewall is configured correctly to safeguard your network and optimize performance.</span>
+              <span><strong class="font-semibold text-gray-800">Comprehensive Firewall Setup</strong><br/> Onetech ensures your firewall is configured correctly to safeguard your network and optimize performance.</span>
             </li>
             <li class="flex gap-x-3">
             <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"

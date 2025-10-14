@@ -27,7 +27,7 @@ export const IThomePage = () => {
     {
       question: "How scalable is server virtualization?",
       answer:
-        "Scalability is one of the key features of Server Virtualization, allowing you to expand server capacity or performance as per your requirements without actually investing in physical hardware and with CubeZix, you can rest assured that your virtual servers will always match your business’s ever-expanding demands.",
+        "Scalability is one of the key features of Server Virtualization, allowing you to expand server capacity or performance as per your requirements without actually investing in physical hardware and with Onetech, you can rest assured that your virtual servers will always match your business’s ever-expanding demands.",
     },
     {
       question:
@@ -37,9 +37,9 @@ export const IThomePage = () => {
     },
     {
       question:
-        "How does CubeZix provide support for virtualized environments?",
+        "How does Onetech provide support for virtualized environments?",
       answer:
-        "Our team at CubeZix offers a comprehensive support service for virtualization environments, this includes 24/7 monitoring, troubleshooting, regular updates, and performance patches as we strive to ensure that your virtual servers operate efficiently and without disruptions.",
+        "Our team at Onetech offers a comprehensive support service for virtualization environments, this includes 24/7 monitoring, troubleshooting, regular updates, and performance patches as we strive to ensure that your virtual servers operate efficiently and without disruptions.",
     },
   ];
 
@@ -54,7 +54,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -70,7 +70,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -133,7 +133,7 @@ export const IThomePage = () => {
                 Server Virtualization Services in Dubai
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
-                CubeZix delivers exceptional server virtualization services,
+                Onetech delivers exceptional server virtualization services,
                 optimizing your IT infrastructure for enhanced performance and
                 scalability.
               </p>
@@ -482,7 +482,7 @@ export const IThomePage = () => {
                     Comprehensive Server Virtualization Solutions
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    CubeZix offers top-tier{" "}
+                    Onetech offers top-tier{" "}
                     <span class=" font-semibold text-indigo-600">
                       server virtualization solutions
                     </span>
@@ -759,7 +759,7 @@ export const IThomePage = () => {
             </svg>
             <div class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 class=" text-base/7 font-semibold text-indigo-600 tracking-[.35em] mb-3 uppercase">
-                Support provided by CubeZix
+                Support provided by Onetech
               </h2>
               <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                 Server Virtualization Solutions
@@ -778,7 +778,7 @@ export const IThomePage = () => {
               </div>
 
               <p class="mt-6 text-pretty text-lg/8 text-gray-300">
-                At CubeZix, we can help you eliminate countless useless servers
+                At Onetech, we can help you eliminate countless useless servers
                 by giving you the opportunity to purchase a minimum number of
                 good quality servers. These will contain virtualization options
                 that allow you to obtain different application-related servers

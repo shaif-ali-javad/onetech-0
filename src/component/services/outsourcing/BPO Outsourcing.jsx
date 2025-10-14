@@ -31,12 +31,12 @@ export const IThomePage = () => {
       answer: "To select the best BPO provider, consider factors such as industry experience, expertise in the specific services you need, client reviews, cost-effectiveness, and their adherence to local regulations and data security standards."
     },
     {
-      question: "How does CubeZix support business scalability through BPO?",
-      answer: "CubeZix's BPO solutions are highly scalable, allowing businesses to adjust their service needs as they grow. Whether you need to expand operations or streamline processes, CubeZix can scale services accordingly without requiring large upfront investments."
+      question: "How does Onetech support business scalability through BPO?",
+      answer: "Onetech's BPO solutions are highly scalable, allowing businesses to adjust their service needs as they grow. Whether you need to expand operations or streamline processes, Onetech can scale services accordingly without requiring large upfront investments."
     },
     {
-      question: "What sets CubeZix apart from other BPO providers in Dubai?",
-      answer: "CubeZix stands out due to our deep industry expertise, flexible and customized solutions, commitment to data security, and a proven track record of delivering high-quality services. We build long-term partnerships with our clients, ensuring that we contribute to their ongoing success."
+      question: "What sets Onetech apart from other BPO providers in Dubai?",
+      answer: "Onetech stands out due to our deep industry expertise, flexible and customized solutions, commitment to data security, and a proven track record of delivering high-quality services. We build long-term partnerships with our clients, ensuring that we contribute to their ongoing success."
     }
   ];
 
@@ -54,7 +54,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -70,7 +70,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -142,7 +142,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Business Process Outsourcing (BPO) Solutions</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">Enhance business efficiency with tailored BPO services</p>
-      <p class="mt-6 text-lg/8 text-gray-600">Our CubeZix is dedicated to providing high-quality, cost-effective <span class="font-semibold text-indigo-600">BPO services</span> that boost operational efficiency and enhance profitability. With CubeZix, you can rest assured your business processes and customers are in expert hands.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Our Onetech is dedicated to providing high-quality, cost-effective <span class="font-semibold text-indigo-600">BPO services</span> that boost operational efficiency and enhance profitability. With Onetech, you can rest assured your business processes and customers are in expert hands.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">

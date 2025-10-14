@@ -21,9 +21,9 @@ export const IThomePage = () => {
     },
     {
       question:
-        "What Services Does Cubezix Offer As An IT Outsourcing Company in Dubai?",
+        "What Services Does Onetech Offer As An IT Outsourcing Company in Dubai?",
       answer:
-        "Cubezix offers a wide range of IT Services including: <br/> <br/> <span class='font-semibold text-indigo-600'> Software Development</span> <br/> <span class='font-semibold text-indigo-600'> Website Design & Development</span> <br/> <span class='font-semibold text-indigo-600'> Mobile App Development</span> <br/> <span class='font-semibold text-indigo-600'> Cloud Computing Solutions</span> <br/> <span class='font-semibold text-indigo-600'> Digital Marketing</span> <br/> <span class='font-semibold text-indigo-600'> IT Consulting</span> <br/> <br/> Our team of experienced professionals works closely with clients to understand their specific requirements and deliver customized solutions to meet their needs.",
+        "Onetech offers a wide range of IT Services including: <br/> <br/> <span class='font-semibold text-indigo-600'> Software Development</span> <br/> <span class='font-semibold text-indigo-600'> Website Design & Development</span> <br/> <span class='font-semibold text-indigo-600'> Mobile App Development</span> <br/> <span class='font-semibold text-indigo-600'> Cloud Computing Solutions</span> <br/> <span class='font-semibold text-indigo-600'> Digital Marketing</span> <br/> <span class='font-semibold text-indigo-600'> IT Consulting</span> <br/> <br/> Our team of experienced professionals works closely with clients to understand their specific requirements and deliver customized solutions to meet their needs.",
     },
     {
       question: "How Do I Choose The Right IT Outsourcing Company In Dubai?",
@@ -32,9 +32,9 @@ export const IThomePage = () => {
     },
     {
       question:
-        "What Makes Cubezix Different From Other IT Outsourcing Companies In Dubai?",
+        "What Makes Onetech Different From Other IT Outsourcing Companies In Dubai?",
       answer:
-        "Cubezix sets itself apart by offering <span class='font-semibold text-indigo-600'> high-quality IT solutions at competitive prices</span>. We have a team of <span class='font-semibold text-indigo-600'> highly skilled professionals</span> who stay up-to-date with the latest technologies and trends in the industry. Additionally, we prioritize <span class='font-semibold text-indigo-600'> customer satisfaction</span> and aim to build <span class='font-semibold text-indigo-600'> long-lasting partnerships</span> with our clients",
+        "Onetech sets itself apart by offering <span class='font-semibold text-indigo-600'> high-quality IT solutions at competitive prices</span>. We have a team of <span class='font-semibold text-indigo-600'> highly skilled professionals</span> who stay up-to-date with the latest technologies and trends in the industry. Additionally, we prioritize <span class='font-semibold text-indigo-600'> customer satisfaction</span> and aim to build <span class='font-semibold text-indigo-600'> long-lasting partnerships</span> with our clients",
     },
     {
       question: "How Much Does IT Outsourcing Cost?",
@@ -65,7 +65,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -73,7 +73,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -81,7 +81,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -189,7 +189,7 @@ export const IThomePage = () => {
             </p>
             <p class="mt-6 text-lg/8 text-gray-600">
               Are you tired of managing in-house IT and spending countless hours
-              on maintenance and updates? By partnering with CubeZix for{" "}
+              on maintenance and updates? By partnering with Onetech for{" "}
               <span class="font-semibold text-indigo-600">IT Outsourcing</span>,
               you gain a strategic advantage with seamless technology
               integration and a focus on your business’s unique needs, allowing
@@ -467,10 +467,10 @@ export const IThomePage = () => {
                     TRANSFORM RELIABLY
                   </p>
                   <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">
-                    Why IT Outsourcing with CubeZix ?
+                    Why IT Outsourcing with Onetech ?
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    CubeZix offers a comprehensive{" "}
+                    Onetech offers a comprehensive{" "}
                     <span class="font-semibold text-indigo-600">
                       IT outsourcing solution{" "}
                     </span>{" "}
@@ -514,7 +514,7 @@ export const IThomePage = () => {
                         Cost Efficiency
                       </strong>
                       <br />
-                      Outsourcing your IT services to CubeZix eliminates the
+                      Outsourcing your IT services to Onetech eliminates the
                       need for costly in-house IT infrastructure and personnel.
                     </span>
                   </li>
@@ -545,7 +545,7 @@ export const IThomePage = () => {
                       <strong class="font-semibold text-gray-800">
                         Access to Expertise
                       </strong>
-                      <br /> CubeZix brings a team of certified IT professionals
+                      <br /> Onetech brings a team of certified IT professionals
                       with extensive experience across various sectors.
                     </span>
                   </li>
@@ -576,7 +576,7 @@ export const IThomePage = () => {
                       <strong class="font-semibold text-gray-800">
                         24/7 Support and Monitoring
                       </strong>
-                      <br /> CubeZix provides round-the-clock IT support and
+                      <br /> Onetech provides round-the-clock IT support and
                       proactive monitoring to ensure your systems are running
                       optimally at all times.
                     </span>
@@ -609,7 +609,7 @@ export const IThomePage = () => {
                         Security and Compliance
                       </strong>
                       <br /> We prioritize the security of your data and IT
-                      infrastructure. CubeZix ensures that all services comply
+                      infrastructure. Onetech ensures that all services comply
                       with industry regulations and best practices.
                     </span>
                   </li>
@@ -674,7 +674,7 @@ export const IThomePage = () => {
                         Scalability and Flexibility
                       </strong>
                       <br /> Whether your business is expanding, downsizing, or
-                      going through seasonal changes, CubeZix offers scalable IT
+                      going through seasonal changes, Onetech offers scalable IT
                       solutions that adapt to your evolving needs.
                     </span>
                   </li>

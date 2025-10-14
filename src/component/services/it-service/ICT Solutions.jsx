@@ -15,7 +15,7 @@ export const IThomePage = () => {
       answer: "<span class='text-base/7 font-semibold text-indigo-600'> ICT or Information & Communication Technology Solution Services </span> refers to a range of technologies that allow businesses to manage information and communicate more effectively. These can include network infrastructure, cybersecurity solutions, and communication systems just to name a few"
     },
     {
-      question: "What types of ICT solutions does CubeZix offer?",
+      question: "What types of ICT solutions does Onetech offer?",
       answer: "We offer various types of ICT solutions including: <br/> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Network Design & Setup </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Cloud Solutions </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> VoIP (Voice Over IP) Solutions </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Cybersecurity Solutions </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Data Management </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> IT Infrastructure Support </span> <br/> <br/> Our team of experts are also prepared to provide customized services tailored to the specific requirements of your business"
     },
     {
@@ -23,8 +23,8 @@ export const IThomePage = () => {
       answer: "Indeed, as one of the <span class='text-base/7 font-semibold text-indigo-600'> Premier ICT Solutions Companies in the UAE</span>, we offer a plethora of cloud solutions such as cloud storage solutions & computing & collaboration tools etc. Our services also allow businesses to scale their resources as per their requirements, reduce costs, and improve accessibility all while ensuring that your team can work efficiently in a variety of scenarios."
     },
     {
-      question: "How can CubeZix help with digital transformation using ICT solutions?",
-      answer: "As our slogan says, we strive to ensure that you  <span class='text-base/7 font-semibold text-indigo-600'> “Transform Reliably” </span> and use a variety of cutting-edge solutions such as cloud migration, automation, and encryption to ensure this. CubeZix’s services are designed to ensure that businesses can modernize their operations, improve agility, and maintain an edge over the competition in the rapidly evolving MENA digital landscape."
+      question: "How can Onetech help with digital transformation using ICT solutions?",
+      answer: "As our slogan says, we strive to ensure that you  <span class='text-base/7 font-semibold text-indigo-600'> “Transform Reliably” </span> and use a variety of cutting-edge solutions such as cloud migration, automation, and encryption to ensure this. Onetech’s services are designed to ensure that businesses can modernize their operations, improve agility, and maintain an edge over the competition in the rapidly evolving MENA digital landscape."
     },
     {
       question: "What is the cost of implementing ICT solutions?",
@@ -50,7 +50,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -58,7 +58,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -66,7 +66,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -138,7 +138,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Benefits of Our ICT Services</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">Empowering Dubai’s Future with ICT Solutions</p>
-      <p class="mt-6 text-lg/8 text-gray-600">At CubeZix, we offer a wide range of ICT solutions designed to improve the performance, security, and scalability of your IT systems.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">At Onetech, we offer a wide range of ICT solutions designed to improve the performance, security, and scalability of your IT systems.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -297,7 +297,7 @@ export const IThomePage = () => {
         <div class="lg:max-w-lg">
           <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Secure Multi-Location Connectivity</p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">Why Your Business Needs ICT Solutions</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">Boost your business with CubeZix’s innovative, scalable ICT solutions designed for efficiency and future growth</p>
+          <p class="mt-6 text-xl/8 text-gray-600">Boost your business with Onetech’s innovative, scalable ICT solutions designed for efficiency and future growth</p>
         </div>
       </div>
     </div>

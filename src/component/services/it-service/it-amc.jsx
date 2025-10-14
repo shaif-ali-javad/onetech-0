@@ -25,19 +25,19 @@ export const IThomePage = () => {
         "IT AMC services typically include hardware and software maintenance, network management, data backup, security updates, system monitoring, and 24/7 support.",
     },
     {
-      question: "What will CubeZix IT AMC services involves?",
+      question: "What will Onetech IT AMC services involves?",
       answer:
-        "CubeZix offers a variety of AMC contract options that are tailored to your specific business requirements. These agreements cover a variety of IT AMC services, including: <br/> <br/> Unlimited remote support <br/> On-site visit/consultation by a dedicated IT engineer <br/> IT audits and training are performed on a regular basis. <br/> Preventive maintenance and monthly reports",
+        "Onetech offers a variety of AMC contract options that are tailored to your specific business requirements. These agreements cover a variety of IT AMC services, including: <br/> <br/> Unlimited remote support <br/> On-site visit/consultation by a dedicated IT engineer <br/> IT audits and training are performed on a regular basis. <br/> Preventive maintenance and monthly reports",
     },
     {
-      question: "How do I get in touch with CubeZix for IT AMC support?",
+      question: "How do I get in touch with Onetech for IT AMC support?",
       answer:
-        "Consumer satisfaction is a top priority for the CubeZix team. For professional IT AMC support <br/> <br/>Use our 24/7 Chat support or <br/>Call us on our helpline number <br/>Email us at @ info@cubezix.com <br/>You can also use our ticketing tool to put in a request for remote support of all IT peripherals.",
+        "Consumer satisfaction is a top priority for the Onetech team. For professional IT AMC support <br/> <br/>Use our 24/7 Chat support or <br/>Call us on our helpline number <br/>Email us at @ info@Onetech.com <br/>You can also use our ticketing tool to put in a request for remote support of all IT peripherals.",
     },
     {
       question: "Do we have a dedicated It manager and engineer?",
       answer:
-        "CubeZix offers a variety of IT AMC packages that are tailored to various business models. The majority of these packages include on-site or emergency IT support from a dedicated IT manager and engineer. These requirements can be easily customized for the IT AMC you select.",
+        "Onetech offers a variety of IT AMC packages that are tailored to various business models. The majority of these packages include on-site or emergency IT support from a dedicated IT manager and engineer. These requirements can be easily customized for the IT AMC you select.",
     },
     {
       question: "Is it possible to upgrade or downgrade my IT AMC service?",
@@ -57,7 +57,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -65,7 +65,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -73,7 +73,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:

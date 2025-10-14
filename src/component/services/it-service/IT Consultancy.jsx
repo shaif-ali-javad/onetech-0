@@ -16,7 +16,7 @@ export const IThomePage = () => {
     },
     {
       question:
-        "What services are included in CubeZix's IT consultancy offerings?",
+        "What services are included in Onetech's IT consultancy offerings?",
       answer:
         "We offer a variety of services as part of our IT consultation, including: <br/> <br/> <span class='font-semibold text-indigo-600'> IT Strategy Development </span>  <br/><span class='font-semibold text-indigo-600'> Infrastructure Assessment </span> <br/><span class='font-semibold text-indigo-600'> Cloud Computing Solutions </span> <br/><span class='font-semibold text-indigo-600'> Cybersecurity Plans </span> <br/><span class='font-semibold text-indigo-600'> Network Design </span> <br/><span class='font-semibold text-indigo-600'> Data Management </span> <br/><span class='font-semibold text-indigo-600'> Technology Upgrades </span> <br/> <br/> Even beyond this, we offer services customized to your business’s unique requirements.",
     },
@@ -29,11 +29,11 @@ export const IThomePage = () => {
     {
       question: "How long does an IT consultancy project typically take?",
       answer:
-        "The duration of a project is dependent upon a number of factors including the scope and complexity of the business requirements. As per CubeZix’s standard operating procedure, we provide a detailed breakdown and timeline of each phase of the project to ensure complete transparency with our clients and timely execution.",
+        "The duration of a project is dependent upon a number of factors including the scope and complexity of the business requirements. As per Onetech’s standard operating procedure, we provide a detailed breakdown and timeline of each phase of the project to ensure complete transparency with our clients and timely execution.",
     },
     {
       question:
-        "Can CubeZix provide ongoing support after the consultancy project is complete?",
+        "Can Onetech provide ongoing support after the consultancy project is complete?",
       answer:
         "Indeed, our team provides ongoing support and maintenance for all our consultations. We offer assistance with system monitoring, system updates as well as troubleshooting to ensure your business operations run smoothly and securely.",
     },
@@ -50,7 +50,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -58,7 +58,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -66,7 +66,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -129,7 +129,7 @@ export const IThomePage = () => {
                 IT Consultancy Services in Dubai
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
-                CubeZix offers expert IT consultancy to help businesses achieve
+                Onetech offers expert IT consultancy to help businesses achieve
                 their IT goals efficiently.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -175,7 +175,7 @@ export const IThomePage = () => {
               We help organizations use information technology (IT) to achieve
               their business objectives.{" "}
               <span class=" font-semibold text-indigo-600">
-                CubeZix IT consultants{" "}
+                Onetech IT consultants{" "}
               </span>{" "}
               provide expertise, advice, and solutions to improve and optimize a
               company’s IT infrastructure, systems, and processes.

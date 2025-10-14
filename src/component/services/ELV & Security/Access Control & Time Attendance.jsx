@@ -22,15 +22,15 @@ export const IThomePage = () => {
     },
     {
       question:
-        "Can CubeZix scale access control systems as my business grows?",
+        "Can Onetech scale access control systems as my business grows?",
       answer:
         "Indeed, our team designs solutions with flexibility and scalability in mind so that your business remains secure as you expand. Whether you require additional entry points, add new locations, or upgrade your security measures, our systems can easily be scaled to meet your needs.",
     },
     {
       question:
-        "Can CubeZix provide Visitor Management Solutions through access control?",
+        "Can Onetech provide Visitor Management Solutions through access control?",
       answer:
-        "Yes, as part of our access control solutions, CubeZix offers <span class=' font-semibold text-indigo-600'> Visitor Management Systems </span> for managing and monitoring visitor activity, providing temporary access credentials, and maintaining visitation records for your premises.",
+        "Yes, as part of our access control solutions, Onetech offers <span class=' font-semibold text-indigo-600'> Visitor Management Systems </span> for managing and monitoring visitor activity, providing temporary access credentials, and maintaining visitation records for your premises.",
     },
     {
       question: "How much does it cost to implement an access control system?",
@@ -50,7 +50,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -58,7 +58,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -66,7 +66,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -475,7 +475,7 @@ export const IThomePage = () => {
                     Management
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    CubeZix offers diverse door{" "}
+                    Onetech offers diverse door{" "}
                     <span class=" font-semibold text-indigo-600">
                       access control systems
                     </span>
@@ -768,7 +768,7 @@ export const IThomePage = () => {
               </div>
 
               <p class="mt-6 text-pretty text-lg/8 text-gray-300">
-                At CubeZix, our Web-based Access Soft offers a comprehensive
+                At Onetech, our Web-based Access Soft offers a comprehensive
                 suite of features designed to enhance security and streamline
                 access control for your organization. With functionalities such
                 as Access Grant Time, Extended Grant Access Time, and the

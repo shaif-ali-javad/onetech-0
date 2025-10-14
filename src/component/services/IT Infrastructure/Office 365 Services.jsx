@@ -25,14 +25,14 @@ export const IThomePage = () => {
         "Indeed, Office 365 offers several flexible subscription plans that can chosen as per your business’s scale and requirements. Additionally, our team of experts can also assist clients with setting up their plan’s various features including shared storage, user access, and app integrations to ensure Office 365 is integrated with your workflow.",
     },
     {
-      question: "Can CubeZix help migrate my business to Office 365?",
+      question: "Can Onetech help migrate my business to Office 365?",
       answer:
         "Of course, we ensure a smooth and seamless migration process for all your existing data, work emails, and productivity systems to your Office 365 account so that you can continue focusing on your business without any disruptions.",
     },
     {
-      question: "How can CubeZix help improve security in Office 365?",
+      question: "How can Onetech help improve security in Office 365?",
       answer:
-        "We understand that Data Confidentiality & Security are incredibly important in today’s data-driven world, which is why alongside setup & maintenance, CubeZix also ensures your data is secure, by implementing various security measures including: <br/> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Secure Access Protocols </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Data Encryption Configuration </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Multi-Factor Authentication (MFA) </span> <br/> <br/> To protect your business is protected from threats.",
+        "We understand that Data Confidentiality & Security are incredibly important in today’s data-driven world, which is why alongside setup & maintenance, Onetech also ensures your data is secure, by implementing various security measures including: <br/> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Secure Access Protocols </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Data Encryption Configuration </span> <br/> <span class='text-base/7 font-semibold text-indigo-600'> Multi-Factor Authentication (MFA) </span> <br/> <br/> To protect your business is protected from threats.",
     },
   ];
 
@@ -47,7 +47,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -55,7 +55,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -63,7 +63,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -169,7 +169,7 @@ export const IThomePage = () => {
               Microsoft Office 365 migration services in Dubai
             </p>
             <p class="mt-6 text-lg/8 text-gray-600">
-              CubeZix offers comprehensive{" "}
+              Onetech offers comprehensive{" "}
               <span class=" font-semibold text-indigo-600">
                 Microsoft Office 365 solutions in Dubai
               </span>
@@ -472,7 +472,7 @@ export const IThomePage = () => {
                     Seamless Office 365 Migration and Support Services
                   </h1>
                   <p class="mt-6 text-xl/8 text-gray-600">
-                    CubeZix ensures a smooth Office 365 migration with expert
+                    Onetech ensures a smooth Office 365 migration with expert
                     consulting, implementation, and support, enhancing
                     productivity and connectivity.
                   </p>

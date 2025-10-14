@@ -10,9 +10,9 @@ export const IThomePage = () => {
 
   const faqs = [
     {
-      question: "What are structured cabling services offered by Cubezix?",
+      question: "What are structured cabling services offered by Onetech?",
       answer:
-        "Cubezix offers comprehensive structured cabling services including installation, maintenance, and management of communication networks for businesses of all sizes in Dubai.",
+        "Onetech offers comprehensive structured cabling services including installation, maintenance, and management of communication networks for businesses of all sizes in Dubai.",
     },
     {
       question: "Why is structured cabling important for my business in Dubai?",
@@ -32,14 +32,14 @@ export const IThomePage = () => {
     },
     {
       question:
-        "How does Cubezix ensure the quality of its structured cabling installations?",
+        "How does Onetech ensure the quality of its structured cabling installations?",
       answer:
-        "Cubezix uses high-quality materials and adheres to industry standards during installations. Our experienced technicians undergo regular training and use best practices to deliver reliable and effective cabling solutions.",
+        "Onetech uses high-quality materials and adheres to industry standards during installations. Our experienced technicians undergo regular training and use best practices to deliver reliable and effective cabling solutions.",
     },
     {
       question: "Do you offer support and maintenance for structured cabling?",
       answer:
-        "Yes, Cubezix offers ongoing support and maintenance services to ensure your structured cabling system remains efficient and problem-free over time.",
+        "Yes, Onetech offers ongoing support and maintenance services to ensure your structured cabling system remains efficient and problem-free over time.",
     },
     {
       question: "What Are The Advantages Of Structured Cabling?",
@@ -59,7 +59,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -67,7 +67,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -75,7 +75,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -186,7 +186,7 @@ export const IThomePage = () => {
               <span class=" font-semibold text-indigo-600">
                 IT infrastructure
               </span>
-              . CubeZix offers full-service network cabling in Dubai, including
+              . Onetech offers full-service network cabling in Dubai, including
               the design and installation of structured cabling systems. We
               manage every detail, from cable laying and connector installation
               to network cabinet setup and cable testing, using various cable
@@ -411,7 +411,7 @@ export const IThomePage = () => {
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-auto text-center">
             <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-              Get CubeZix Structured Cabling Solutions
+              Get Onetech Structured Cabling Solutions
             </h2>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
               Get in touch with our team today for structured cabling services

@@ -37,7 +37,7 @@ export const IThomePage = () => {
       answer: "The overall time taken is dependent upon the size of the office as well as the complexity of the IT infrastructure to be installed. Generally speaking, small-to-medium sized businesses can take up anywhere from 1-3 weeks, though our goal is to always minimize any disruption to your business operations and maintain provided timelines."
     },
     {
-      question: "How does CubeZix handle data migration during the office IT setup?",
+      question: "How does Onetech handle data migration during the office IT setup?",
       answer: "In order to ensure safety during the data migration phase, our team uses a number of security solutions such as encryption during data transfer as well as maintaining physical and cloud backups to minimize possibility of any data loss."
     },
     {
@@ -60,7 +60,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -68,7 +68,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -76,7 +76,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -128,7 +128,7 @@ export const IThomePage = () => {
             </div>
             <div className="text-center">
               <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">New Office IT Setup Solutions</h1>
-              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">At CubeZix, we understand that envisioning a new office can be exciting yet daunting. Our expert team in Dubai specializes in providing end-to-end Office New IT setup solutions, including consultancy, planning, and execution.</p>
+              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">At Onetech, we understand that envisioning a new office can be exciting yet daunting. Our expert team in Dubai specializes in providing end-to-end Office New IT setup solutions, including consultancy, planning, and execution.</p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a href="/" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
                 <a href="/" className="text-sm/6 font-semibold text-gray-800">Learn more <span aria-hidden="true">→</span></a>
@@ -148,7 +148,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">IT Setup for Your New Office</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">New office IT Infrastructure Setup and Support</p>
-      <p class="mt-6 text-lg/8 text-gray-600">At CubeZix, we turn your office vision into reality with our expert <span class=" font-semibold text-indigo-600">office IT setup solutions in Dubai</span>. From initial consultancy to final implementation, our experienced team ensures that your IT infrastructure meets all your needs and adapts to your schedule.
+      <p class="mt-6 text-lg/8 text-gray-600">At Onetech, we turn your office vision into reality with our expert <span class=" font-semibold text-indigo-600">office IT setup solutions in Dubai</span>. From initial consultancy to final implementation, our experienced team ensures that your IT infrastructure meets all your needs and adapts to your schedule.
       <br/>
       <br/>
       Whether setting up a new office or upgrading an existing one, we provide tailored solutions to achieve a flawless setup.</p>
@@ -311,7 +311,7 @@ export const IThomePage = () => {
         <div class="lg:max-w-lg">
           <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Tailored IT Consultation</p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">IT Solutions for New Offices</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">At CubeZix, we deliver a complete range of <span class=" font-semibold text-indigo-600">office IT setup</span> solutions in Dubai, from expert consultation and precise implementation to ongoing support and maintenance.</p>
+          <p class="mt-6 text-xl/8 text-gray-600">At Onetech, we deliver a complete range of <span class=" font-semibold text-indigo-600">office IT setup</span> solutions in Dubai, from expert consultation and precise implementation to ongoing support and maintenance.</p>
         </div>
       </div>
     </div>
@@ -479,7 +479,7 @@ export const IThomePage = () => {
                 strokeLinejoin="round"
                 d="M5 13l4 4L19 7" />
               </svg>
-              <span><strong class="font-semibold text-gray-800">Equipment Set-Up</strong><br/> CubeZix provides and installs genuine office equipment tailored to your specifications.</span>
+              <span><strong class="font-semibold text-gray-800">Equipment Set-Up</strong><br/> Onetech provides and installs genuine office equipment tailored to your specifications.</span>
             </li><li class="flex gap-x-3">
             <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
                 viewBox="0 0 20 25"

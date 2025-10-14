@@ -15,7 +15,7 @@ export const IThomePage = () => {
       answer: "IT office relocation involves moving your company's entire IT infrastructure, including servers, networks, hardware, and software systems, to a new location while ensuring minimal downtime and operational disruption."
     },
     {
-      question: "How does CubeZix ensure minimal downtime during the move?",
+      question: "How does Onetech ensure minimal downtime during the move?",
       answer: "We conduct a detailed assessment of your current IT setup and plan the move in stages. Our team schedules the relocation at times that best suit your business operations, including after hours or weekends, to ensure your business faces little to no disruption."
     },
     {
@@ -23,19 +23,19 @@ export const IThomePage = () => {
       answer: "Comprehensive planning and consultation <br/> Safe disconnection, packing, and transportation of IT equipment <br/> Setup and installation of IT infrastructure at the new location <br/> Network, server, and system reconfiguration <br/> Testing to ensure everything is working smoothly post-move"
     },
     {
-      question: "How does CubeZix ensure the safety of sensitive data during the move?",
+      question: "How does Onetech ensure the safety of sensitive data during the move?",
       answer: "We employ secure handling procedures, including encryption and data backup before relocation. Our cybersecurity experts ensure all data is protected and that no sensitive information is compromised during the transfer."
     },
     {
-      question: "Can CubeZix assist in setting up new IT infrastructure at the new office?",
-      answer: "Yes, CubeZix can provide both relocation of existing infrastructure and installation of new IT systems, including network cabling, server setup, and configuration of workstations and other IT hardware."
+      question: "Can Onetech assist in setting up new IT infrastructure at the new office?",
+      answer: "Yes, Onetech can provide both relocation of existing infrastructure and installation of new IT systems, including network cabling, server setup, and configuration of workstations and other IT hardware."
     },
     {
       question: "How long does the IT relocation process take?",
-      answer: "The duration of the move depends on the size and complexity of your IT infrastructure. During the consultation phase, CubeZix provides a detailed timeline to ensure minimal interruption to your business."
+      answer: "The duration of the move depends on the size and complexity of your IT infrastructure. During the consultation phase, Onetech provides a detailed timeline to ensure minimal interruption to your business."
     },
     {
-      question: "Does CubeZix provide support post-relocation?",
+      question: "Does Onetech provide support post-relocation?",
       answer: "Yes, after the relocation, we provide post-move support, including troubleshooting and IT system optimization to ensure your operations run smoothly at your new office."
     }
   ];
@@ -54,7 +54,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -70,7 +70,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -121,7 +121,7 @@ export const IThomePage = () => {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">Reliable IT Office Relocation with CubeZix</h1>
+              <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">Reliable IT Office Relocation with Onetech</h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Our team of experts ensures a seamless transition by managing every aspect of your IT move, from secure equipment transport to efficient setup at your new location.</p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a href="/" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>

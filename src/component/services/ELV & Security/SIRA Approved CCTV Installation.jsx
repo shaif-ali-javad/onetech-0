@@ -23,9 +23,9 @@ export const IThomePage = () => {
     },
     {
       question:
-        "Can Cubezix help with upgrading an existing CCTV system to meet SIRA standards?",
+        "Can Onetech help with upgrading an existing CCTV system to meet SIRA standards?",
       answer:
-        "Yes, Cubezix offers upgrade services to ensure that your current CCTV system is SIRA-compliant. We’ll assess your existing setup and provide the necessary enhancements to meet regulatory standards.",
+        "Yes, Onetech offers upgrade services to ensure that your current CCTV system is SIRA-compliant. We’ll assess your existing setup and provide the necessary enhancements to meet regulatory standards.",
     },
     {
       question:
@@ -35,9 +35,9 @@ export const IThomePage = () => {
     },
     {
       question:
-        "Does Cubezix provide maintenance after the CCTV installation is complete?",
+        "Does Onetech provide maintenance after the CCTV installation is complete?",
       answer:
-        "Yes, Cubezix offers ongoing maintenance and support services to ensure your CCTV system continues to meet SIRA standards and functions effectively. This includes regular system checks, updates, and repairs when needed.",
+        "Yes, Onetech offers ongoing maintenance and support services to ensure your CCTV system continues to meet SIRA standards and functions effectively. This includes regular system checks, updates, and repairs when needed.",
     },
   ];
 
@@ -52,7 +52,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -60,7 +60,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -68,7 +68,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -178,7 +178,7 @@ export const IThomePage = () => {
               Our comprehensive CCTV solutions not only provide robust security
               for your premises but also ensure full SIRA certification
               compliance. Our process includes assessing your security
-              requirements, expert installation, and end-to-end support. Cubezix
+              requirements, expert installation, and end-to-end support. Onetech
               is committed to delivering top-tier services that protect your
               property while meeting all regulatory requirements.
             </p>

@@ -19,24 +19,24 @@ export const IThomePage = () => {
       answer: "These services are essential for protecting your business from data loss, ensuring business continuity, and minimizing downtime after a disaster. Without them, data breaches, system failures, or disasters could result in lost revenue, damaged reputation, and loss of critical information."
     },
     {
-      question: "What does CubeZix offer in terms of Data Backup services?",
-      answer: "CubeZix provides secure, automated data backup solutions, including cloud backup, on-premise backups, and hybrid backup systems, to ensure your critical data is always protected and recoverable in case of a failure or breach."
+      question: "What does Onetech offer in terms of Data Backup services?",
+      answer: "Onetech provides secure, automated data backup solutions, including cloud backup, on-premise backups, and hybrid backup systems, to ensure your critical data is always protected and recoverable in case of a failure or breach."
     },
     {
       question: "What does a Disaster Recovery Plan (DRP) include?",
-      answer: "CubeZix's Disaster Recovery Plan includes a comprehensive strategy for data restoration, system recovery, and resuming business operations after unexpected disruptions. It covers data backup schedules, recovery time objectives (RTO), recovery point objectives (RPO), failover solutions, and testing of recovery procedures."
+      answer: "Onetech's Disaster Recovery Plan includes a comprehensive strategy for data restoration, system recovery, and resuming business operations after unexpected disruptions. It covers data backup schedules, recovery time objectives (RTO), recovery point objectives (RPO), failover solutions, and testing of recovery procedures."
     },
     {
       question: "What is the difference between on-premise and cloud backup?",
-      answer: "On-premise backup involves storing your data on physical servers or storage devices located within your business, while cloud backup stores your data in remote data centers accessed via the internet. CubeZix offers both options as well as hybrid solutions, depending on your needs for security, accessibility, and scalability"
+      answer: "On-premise backup involves storing your data on physical servers or storage devices located within your business, while cloud backup stores your data in remote data centers accessed via the internet. Onetech offers both options as well as hybrid solutions, depending on your needs for security, accessibility, and scalability"
     },
     {
-      question: "How does CubeZix ensure data security in its backup services?",
-      answer: "CubeZix ensures that your backups are encrypted and stored securely, whether on-premise or in the cloud. We use advanced encryption methods and follow best practices for data protection to prevent unauthorized access and ensure that your information is safe."
+      question: "How does Onetech ensure data security in its backup services?",
+      answer: "Onetech ensures that your backups are encrypted and stored securely, whether on-premise or in the cloud. We use advanced encryption methods and follow best practices for data protection to prevent unauthorized access and ensure that your information is safe."
     },
     {
-      question: "What are the benefits of CubeZix's Data Backup & Disaster Recovery services?",
-      answer: "Minimizes business downtime during disasters <br/>Protects critical data from loss <br/>Provides secure, scalable backup solutions <br/>Ensures business continuity and compliance with regulations <br/>Customized recovery plans tailored to your business <br/>24/7 monitoring and support from CubeZix experts"
+      question: "What are the benefits of Onetech's Data Backup & Disaster Recovery services?",
+      answer: "Minimizes business downtime during disasters <br/>Protects critical data from loss <br/>Provides secure, scalable backup solutions <br/>Ensures business continuity and compliance with regulations <br/>Customized recovery plans tailored to your business <br/>24/7 monitoring and support from Onetech experts"
     }
   ];
 
@@ -54,7 +54,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        '“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
+        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
       name: 'Judith Black',
       role: 'Assistant Finance Manager of Al Rama International FZCO',
       image:
@@ -62,7 +62,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        '“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
+        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
       name: 'Alex Johnson',
       role: 'Chief Product Officer of Arabyads',
       image:
@@ -70,7 +70,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: 'Sarah Williams',
       role: 'Director of International Textile Exports Ltd',
       image:
@@ -142,7 +142,7 @@ export const IThomePage = () => {
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Protecting Your Business with Secure Backup</h2>
       <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">Data Backup & Disaster Recovery Services in UAE</p>
-      <p class="mt-6 text-lg/8 text-gray-600">CubeZix provides vital data backup and disaster recovery services in UAE, protecting against data loss and ensuring business continuity. Our solutions safeguard your data and brand value through effective risk management.</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Onetech provides vital data backup and disaster recovery services in UAE, protecting against data loss and ensuring business continuity. Our solutions safeguard your data and brand value through effective risk management.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -302,7 +302,7 @@ export const IThomePage = () => {
         <div class="lg:max-w-lg">
           <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Efficient Network Operations</p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">Data Backup and Disaster Recovery Services in Dubai</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">CubeZix offers robust data backup and disaster recovery services in Dubai, safeguarding your business against data loss and minimizing downtime with tailored solutions for maximum resilience and continuity.</p>
+          <p class="mt-6 text-xl/8 text-gray-600">Onetech offers robust data backup and disaster recovery services in Dubai, safeguarding your business against data loss and minimizing downtime with tailored solutions for maximum resilience and continuity.</p>
         </div>
       </div>
     </div>

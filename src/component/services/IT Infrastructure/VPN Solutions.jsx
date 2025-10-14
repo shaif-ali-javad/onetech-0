@@ -15,9 +15,9 @@ export const IThomePage = () => {
         "A VPN (Virtual Private Network) provides a secure and encrypted connection over the internet, allowing users to access private networks and share data securely. It hides your IP address and encrypts your internet traffic, making your online activity private and secure.",
     },
     {
-      question: "What VPN solutions does Cubezix offer in Dubai?",
+      question: "What VPN solutions does Onetech offer in Dubai?",
       answer:
-        "Cubezix offers a range of VPN solutions, including: <br/> <br/> <span class=' font-semibold text-indigo-600'> Remote Access VPNs</span> for individuals and businesses to securely connect from different locations. <br/> <span class=' font-semibold text-indigo-600'> Site-to-Site VPNs</span> for connecting multiple offices or branches. <br/> <span class=' font-semibold text-indigo-600'> Cloud VPNs</span> to ensure secure access to cloud resources. <br/> <span class=' font-semibold text-indigo-600'> Mobile VPNs</span> for secure connections on mobile devices.",
+        "Onetech offers a range of VPN solutions, including: <br/> <br/> <span class=' font-semibold text-indigo-600'> Remote Access VPNs</span> for individuals and businesses to securely connect from different locations. <br/> <span class=' font-semibold text-indigo-600'> Site-to-Site VPNs</span> for connecting multiple offices or branches. <br/> <span class=' font-semibold text-indigo-600'> Cloud VPNs</span> to ensure secure access to cloud resources. <br/> <span class=' font-semibold text-indigo-600'> Mobile VPNs</span> for secure connections on mobile devices.",
     },
     {
       question: "Why do businesses in Dubai need VPN solutions?",
@@ -25,14 +25,14 @@ export const IThomePage = () => {
         "VPN solutions are essential for businesses in Dubai to: <br/> <br/> Ensure secure remote access to sensitive business data. <br/> Protect against cyber threats and unauthorized access. <br/> Maintain privacy when accessing public or shared networks. <br/> Ensure compliance with data protection regulations.",
     },
     {
-      question: "How much does a VPN solution cost with Cubezix?",
+      question: "How much does a VPN solution cost with Onetech?",
       answer:
-        "The cost of Cubezix’s VPN solutions depends on the type of VPN, the number of users, and the specific security features required. Cubezix offers tailored packages to suit the needs of businesses of all sizes.",
+        "The cost of Onetech’s VPN solutions depends on the type of VPN, the number of users, and the specific security features required. Onetech offers tailored packages to suit the needs of businesses of all sizes.",
     },
     {
-      question: "Can Cubezix set up a VPN for multiple office locations?",
+      question: "Can Onetech set up a VPN for multiple office locations?",
       answer:
-        "Yes, Cubezix specializes in site-to-site VPN solutions, which allow businesses with multiple office locations to connect securely and share resources over a private, encrypted network.",
+        "Yes, Onetech specializes in site-to-site VPN solutions, which allow businesses with multiple office locations to connect securely and share resources over a private, encrypted network.",
     },
     {
       question: "How do VPNs enhance data privacy for businesses?",
@@ -57,7 +57,7 @@ export const IThomePage = () => {
   const IThomePage = [
     {
       quote:
-        "“From the initial IT consultation to the seamless implementation, CubeZix demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
+        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
       name: "Judith Black",
       role: "Assistant Finance Manager of Al Rama International FZCO",
       image:
@@ -65,7 +65,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, CubeZix offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
+        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
       name: "Alex Johnson",
       role: "Chief Product Officer of Arabyads",
       image:
@@ -73,7 +73,7 @@ export const IThomePage = () => {
     },
     {
       quote:
-        "“CubeZix's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
+        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
       name: "Sarah Williams",
       role: "Director of International Textile Exports Ltd",
       image:
@@ -179,7 +179,7 @@ export const IThomePage = () => {
               Complete VPN Solutions for Offices
             </p>
             <p class="mt-6 text-lg/8 text-gray-600">
-              CubeZix delivers advanced, scalable{" "}
+              Onetech delivers advanced, scalable{" "}
               <span class=" font-semibold text-indigo-600">
                 VPN solutions in Dubai
               </span>
