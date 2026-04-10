@@ -1,530 +1,852 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import LogoSlider from "../../home/partners/carousel/logo-carousel";
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/outline';
 import Navbar from "../../home/navbar/header";
 import Footer from "../../home/footer/footer";
 
-export const IThomePage = () => {
+import {
+  ChevronDown,
+  ChevronUp,
+  ChevronRight,
+  ChevronLeft,
+  Check,
+  Shield,
+  Clock,
+  Headphones,
+  Server,
+  Database,
+  Monitor,
+  Truck,
+  Wifi,
+  Lock,
+  ArrowRight,
+  ArrowUpRight,
+  Phone,
+  Mail,
+  MessageCircle,
+  Star,
+  Users,
+  Award,
+  Zap,
+  CheckCircle,
+  MapPin,
+  Package,
+  Settings,
+  FileCheck,
+  HardDrive,
+  Network,
+  Building,
+  Calendar,
+  Target,
+  Layers,
+  Box,
+  RefreshCw,
+} from "lucide-react";
 
-  const [openIndex, setOpenIndex] = useState(null);
+export const ITRelocationPage = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
 
+  // Services Data
+  const services = [
+    {
+      icon: FileCheck,
+      title: "Pre-Move Assessment",
+      description:
+        "Comprehensive evaluation of your current IT setup and new location requirements.",
+      features: ["Site survey", "Network mapping", "Risk assessment", "Timeline planning"],
+    },
+    {
+      icon: Database,
+      title: "Data Protection",
+      description:
+        "Complete backup and security measures to ensure zero data loss during transition.",
+      features: ["Full backup", "Encryption", "Disaster recovery", "Data verification"],
+    },
+    {
+      icon: Truck,
+      title: "Secure Transport",
+      description:
+        "Professional packing and insured transportation of all IT equipment.",
+      features: ["Expert packing", "GPS tracking", "Insurance coverage", "Climate control"],
+    },
+    {
+      icon: Settings,
+      title: "Installation & Setup",
+      description:
+        "Complete installation and configuration at your new location.",
+      features: ["Network setup", "Server config", "Workstation setup", "Testing"],
+    },
+  ];
+
+  // Timeline Steps
+  const timelineSteps = [
+    {
+      phase: "Phase 1",
+      title: "Discovery & Planning",
+      duration: "Week 1-2",
+      tasks: [
+        "Initial consultation",
+        "Site assessment",
+        "Inventory audit",
+        "Create relocation plan",
+      ],
+    },
+    {
+      phase: "Phase 2",
+      title: "Preparation",
+      duration: "Week 2-3",
+      tasks: [
+        "Data backup",
+        "Label equipment",
+        "Prepare new site",
+        "Test network infrastructure",
+      ],
+    },
+    {
+      phase: "Phase 3",
+      title: "Execution",
+      duration: "Week 3-4",
+      tasks: [
+        "Disconnect systems",
+        "Pack equipment",
+        "Transport securely",
+        "Unpack at new site",
+      ],
+    },
+    {
+      phase: "Phase 4",
+      title: "Go Live",
+      duration: "Week 4",
+      tasks: [
+        "Install equipment",
+        "Configure networks",
+        "System testing",
+        "User training",
+      ],
+    },
+  ];
+
+  // Why Choose Us
+  const whyChooseUs = [
+    {
+      number: "01",
+      title: "Zero Downtime Approach",
+      description:
+        "We plan moves during off-hours and weekends to ensure your business never stops.",
+    },
+    {
+      number: "02",
+      title: "Certified IT Experts",
+      description:
+        "Our engineers are certified professionals with years of relocation experience.",
+    },
+    {
+      number: "03",
+      title: "End-to-End Service",
+      description:
+        "From planning to post-move support, we handle every aspect of your IT move.",
+    },
+    {
+      number: "04",
+      title: "Guaranteed Data Safety",
+      description:
+        "Multiple backup layers and encryption ensure your data is 100% protected.",
+    },
+  ];
+
+  // Testimonials
+  const testimonials = [
+    {
+      quote:
+        "The relocation was flawless. We were operational in our new office within hours, not days. Incredible team!",
+      name: "Ahmed Hassan",
+      role: "CTO, Dubai Tech Solutions",
+      company: "Dubai Tech Solutions",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      quote:
+        "They moved our entire data center without a single issue. Professional, efficient, and reliable.",
+      name: "Sarah Al Maktoum",
+      role: "IT Director, Emirates Group",
+      company: "Emirates Group",
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      quote:
+        "Best IT relocation service in Dubai. They understood our needs and delivered beyond expectations.",
+      name: "Michael Chen",
+      role: "Operations Manager, Global Corp",
+      company: "Global Corp",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  ];
+
+  // FAQs
   const faqs = [
     {
-      question: "What is IT office relocation?",
-      answer: "IT office relocation involves moving your company's entire IT infrastructure, including servers, networks, hardware, and software systems, to a new location while ensuring minimal downtime and operational disruption."
+      question: "What is included in your IT relocation service?",
+      answer:
+        "Our service includes pre-move assessment, data backup, equipment packing, secure transportation, installation at new location, network configuration, system testing, and post-move support.",
     },
     {
-      question: "How does Onetech ensure minimal downtime during the move?",
-      answer: "We conduct a detailed assessment of your current IT setup and plan the move in stages. Our team schedules the relocation at times that best suit your business operations, including after hours or weekends, to ensure your business faces little to no disruption."
+      question: "How do you ensure data safety during the move?",
+      answer:
+        "We create multiple encrypted backups before the move, use secure transportation methods, and verify all data integrity after installation. Our zero data loss guarantee protects your business.",
     },
     {
-      question: "What services are included in the IT relocation?",
-      answer: "Comprehensive planning and consultation <br/> Safe disconnection, packing, and transportation of IT equipment <br/> Setup and installation of IT infrastructure at the new location <br/> Network, server, and system reconfiguration <br/> Testing to ensure everything is working smoothly post-move"
+      question: "Can you work outside business hours?",
+      answer:
+        "Yes, we specialize in after-hours and weekend relocations to minimize disruption to your business operations. Most moves are completed overnight or during weekends.",
     },
     {
-      question: "How does Onetech ensure the safety of sensitive data during the move?",
-      answer: "We employ secure handling procedures, including encryption and data backup before relocation. Our cybersecurity experts ensure all data is protected and that no sensitive information is compromised during the transfer."
+      question: "How long does a typical IT relocation take?",
+      answer:
+        "Small offices (under 20 workstations) typically take 1-2 days. Medium offices take 2-3 days. Large enterprises may require a phased approach over 1-2 weeks.",
     },
     {
-      question: "Can Onetech assist in setting up new IT infrastructure at the new office?",
-      answer: "Yes, Onetech can provide both relocation of existing infrastructure and installation of new IT systems, including network cabling, server setup, and configuration of workstations and other IT hardware."
-    },
-    {
-      question: "How long does the IT relocation process take?",
-      answer: "The duration of the move depends on the size and complexity of your IT infrastructure. During the consultation phase, Onetech provides a detailed timeline to ensure minimal interruption to your business."
-    },
-    {
-      question: "Does Onetech provide support post-relocation?",
-      answer: "Yes, after the relocation, we provide post-move support, including troubleshooting and IT system optimization to ensure your operations run smoothly at your new office."
-    }
-  ];
-
-  const toggleAnswer = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null);
-    } else {
-      setOpenIndex(index);
-    }
-  };
-
-
-
-  
-  const IThomePage = [
-    {
-      quote:
-        '“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”',
-      name: 'Judith Black',
-      role: 'Assistant Finance Manager of Al Rama International FZCO',
-      image:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-    {
-      quote:
-        '“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”',
-      name: 'Alex Johnson',
-      role: 'Chief Product Officer of Arabyads',
-      image:
-        'https://images.unsplash.com/photo-1502767089025-d6f4b74b5ea3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-    {
-      quote:
-        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
-      name: 'Sarah Williams',
-      role: 'Director of International Textile Exports Ltd',
-      image:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      question: "Do you provide post-move support?",
+      answer:
+        "Yes, we provide 30 days of dedicated post-move support including troubleshooting, optimization, and any adjustments needed to ensure smooth operations.",
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Stats
+  const stats = [
+    { value: "500+", label: "Relocations" },
+    { value: "0", label: "Data Loss" },
+    { value: "24/7", label: "Support" },
+    { value: "99%", label: "On-Time" },
+  ];
 
-  // Automatic sliding effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === IThomePage.length - 1 ? 0 : prevIndex + 1
+      setCurrentTestimonial((prev) =>
+        prev === testimonials.length - 1 ? 0 : prev + 1
       );
-    }, 10000); // Change slide every 5 seconds
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [IThomePage.length]);
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) =>
+      prev === testimonials.length - 1 ? 0 : prev + 1
+    );
+  };
 
-  // const prevSlide = () => {
-  //   setCurrentIndex(
-  //     currentIndex === 0 ? IThomePage.length - 1 : currentIndex - 1
-  //   );
-  // };
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
+  };
 
-  // const nextSlide = () => {
-  //   setCurrentIndex(
-  //     currentIndex === IThomePage.length - 1 ? 0 : currentIndex + 1
-  //   );
-  // };
-
-
-  // render() {
-    return (
-        <>
+  return (
+    <>
       <Navbar />
-        <div className="bg-gray">      
-        <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"}}></div>
+
+      {/* ==================== HERO SECTION - SPLIT DESIGN ==================== */}
+      <section className="min-h-screen grid lg:grid-cols-2">
+        {/* Left Side - Content */}
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0 bg-white order-2 lg:order-1">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-12 bg-blue-900"></div>
+              <span className="text-blue-900 font-semibold uppercase tracking-wider text-sm">
+                IT Relocation Dubai
+              </span>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              Move Your
+              <span className="block text-blue-900">IT Infrastructure</span>
+              Seamlessly
+            </h1>
+
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Expert IT office relocation services in Dubai. We ensure zero
+              downtime, complete data protection, and a smooth transition to
+              your new location.
+            </p>
+
+            {/* Stats Row */}
+            <div className="grid grid-cols-4 gap-4 mb-10 py-6 border-y border-gray-200">
+              {stats.map((stat, index) => (
+                <div key={index} className="text-center">
+                  <p className="text-2xl lg:text-3xl font-bold text-blue-900">
+                    {stat.value}
+                  </p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 font-semibold hover:bg-blue-800 transition-all duration-300 group"
+              >
+                Get Free Quote
+                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </Link>
+              <a
+                href="tel:+971000000000"
+                className="inline-flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 px-8 py-4 font-semibold hover:bg-gray-900 hover:text-white transition-all duration-300"
+              >
+                <Phone className="w-5 h-5" />
+                Call Us Now
+              </a>
+            </div>
           </div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-38 lg:py-36">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-800/10 hover:ring-gray-800/20 tracking-[.35em] uppercase">
-              Expert Solutions for a Smooth Corporate Move
-              {/* <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a> */}
-              </div>
-            </div>
-            <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">Reliable IT Office Relocation with Onetech</h1>
-              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">Our team of experts ensures a seamless transition by managing every aspect of your IT move, from secure equipment transport to efficient setup at your new location.</p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="/" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="/" className="text-sm/6 font-semibold text-gray-800">Learn more <span aria-hidden="true">→</span></a>
-              </div>
-            </div>
-          </div>
-          <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-            <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"}}></div>
-          </div>
         </div>
-      </div>      
-      
-      <LogoSlider/>
 
-      <div class="bg-gray py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Effortless Transitions with Planning</h2>
-      <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">New Office IT Relocations Made Easy</p>
-      <p class="mt-6 text-lg/8 text-gray-600">We offer seamless IT Relocation services to ensure your business transitions smoothly to new locations. Our comprehensive services include planning, de-installation, safe transportation, and reinstallation of all <span class="font-semibold text-indigo-600">IT infrastructure</span>, including servers, networks, and workstations.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Comprehensive Planning
-          </dt>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Secure Equipment Handling
-          </dt>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Network Reconfiguration
-          </dt>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Data Integrity and Backup
-          </dt>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Minimal Downtime
-          </dt>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-800">
-            <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            Post-Move Support
-          </dt>
-        </div>
-      </dl>
-    </div>
+        {/* Right Side - Image */}
+        <div className="relative bg-blue-900 order-1 lg:order-2 min-h-[400px] lg:min-h-screen">
+          <img
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="IT Relocation"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 to-blue-950/90"></div>
 
-    <div class=" py-24 sm:py-32">
-  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-    <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
-      <div class="relative lg:row-span-2">
-        <div class="absolute inset-px rounded-lg bg-gray-100 lg:rounded-l-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)] pb-8">
-          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-          <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">Essential IT Setup</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Expert Consultancy and Seamless Implementation for Optimal Office IT Solutions
-            We offer expert IT</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">We offer expert IT consultancy and precise implementation for a flawless office setup.</p>
-          </div>
-          
-        </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
-      </div>
-      
-      <div class="relative lg:row-span-2">
-        <div class="absolute inset-px rounded-lg bg-gray-100 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)] pb-8">
-          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-          <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">Premier IT Support</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Tailored IT Solutions and Efficient Project Execution for Your Office</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">We deliver custom IT infrastructure design and efficient execution for optimal office functionality.</p>
-          </div>
-          
-        </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
-
-<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"/>
-  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"}}></div>
-  </div>
-  <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
-    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"}}></div>
-  </div>
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-auto text-center">
-      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Are you ready to move your IT Office Today?</h2>
-      <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">Protect Your Business with Reliable IT Relocation Services in Dubai.</p>
-    </div>
-    <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="/" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="/" className="text-sm/6 font-semibold text-gray-200">Learn more <span aria-hidden="true">→</span></a>
-              </div>
-    
-  </div>
-</div>
-
-
-
-<div class="relative isolate overflow-hidden bg-gray px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-  <div class="absolute inset-0 -z-10 overflow-hidden">
-    <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
-      <defs>
-        <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-          <path d="M100 200V.5M.5 .5H200" fill="none" />
-        </pattern>
-      </defs>
-      <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-        <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-      </svg>
-      <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
-    </svg>
-  </div>
-  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-    {/* <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-      <div class="lg:pr-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em]">TRANSFORM RELIABLY</p>
-          <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-200 sm:text-5xl">A better workflow</h1>
-          <p class="mt-6 text-xl/8 text-gray-300">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
-        </div>
-      </div>
-    </div> */}
-    <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      {/* <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt=""/> */}
-
-
-      
-    <div class="lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 pt-8">
-      <div class="lg:pr-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">Technology Transition</p>
-          <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">Streamlined IT Relocation</h1>
-          <p class="mt-6 text-xl/8 text-gray-600">Ensuring a seamless IT relocation with thorough planning, data protection, and post-move support.</p>
-        </div>
-      </div>
-    </div>
-
-      
-    </div>
-    <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-      <div class="lg:pr-4">
-        <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-          <ul class="mt-8 space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
-                viewBox="0 0 20 25"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true">
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                />
-                <path strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7" />
-              </svg>
-              <span><strong class="font-semibold text-gray-800">Schedule a Visit</strong><br/>We review your new office’s infrastructure to design an optimal network layout in advance.</span>
-            </li>
-            <li class="flex gap-x-3">
-            <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
-                viewBox="0 0 20 25"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true">
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                />
-                <path strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7" />
-              </svg>
-              <span><strong class="font-semibold text-gray-800">Evaluate Your Current Setup</strong><br/> We audit and inventory your existing IT to plan the new setup accurately and efficiently.</span>
-            </li>
-            <li class="flex gap-x-3">
-            <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
-                viewBox="0 0 20 25"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true">
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                />
-                <path strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7" />
-              </svg>
-              <span><strong class="font-semibold text-gray-800">Plan for Communications</strong><br/>We configure phone lines and power outlets, ensuring all communications systems are arranged perfectly.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
-                viewBox="0 0 20 25"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true">
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                />
-                <path strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7" />
-              </svg>
-              <span><strong class="font-semibold text-gray-800">Protect Your Data</strong><br/> We secure extra copies of critical data to prevent loss during the moving process.</span>
-            </li>
-            <li class="flex gap-x-3">
-            <svg class="mt-1 size-5 flex-none text-indigo-600" fill="none"
-                viewBox="0 0 20 25"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true">
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                />
-                <path strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7" />
-              </svg>
-              <span><strong class="font-semibold text-gray-800">Test Everything</strong><br/>Our experts troubleshoot and finalize setups to ensure smooth operations post-move with minimal downtime.</span>
-            </li>
-            
-          </ul>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-
-      <div className="mx-auto max-w-4xl">
-        {/* <img
-          className="mx-auto h-12"
-          src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
-          alt=""
-        /> */}
-
-        <div className="relative mt-10">
-          {/* Carousel */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-300"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {IThomePage.map((testimonial, index) => (
-                <figure
+          {/* Floating Elements */}
+          <div className="absolute inset-0 flex items-center justify-center p-8">
+            <div className="grid grid-cols-2 gap-4 max-w-md w-full">
+              {[
+                { icon: Shield, label: "100% Secure" },
+                { icon: Clock, label: "24/7 Support" },
+                { icon: Truck, label: "Insured Transport" },
+                { icon: Check, label: "Zero Data Loss" },
+              ].map((item, index) => (
+                <div
                   key={index}
-                  className="min-w-full text-center px-4 sm:px-6"
+                  className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center hover:bg-white/20 transition-all duration-300"
                 >
-                  <blockquote className="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-                    <p>{testimonial.quote}</p>
-                  </blockquote>
-                  <figcaption className="mt-1">
-                    <img
-                      className="mx-auto size-10 rounded-full"
-                      // src={testimonial.image}
-                      alt={testimonial.name}
-                    />
-                    <div className="mt-1 flex items-center justify-center space-x-3 text-base">
-                      <div className="font-semibold text-gray-900">
-                        {testimonial.name}
-                      </div>
-                      <svg
-                        viewBox="0 0 2 2"
-                        width="3"
-                        height="3"
-                        aria-hidden="true"
-                        className="fill-gray-900"
-                      >
-                        <circle cx="1" cy="1" r="1" />
-                      </svg>
-                      <div className="text-gray-600">{testimonial.role}</div>
-                    </div>
-                  </figcaption>
-                </figure>
+                  <item.icon className="w-8 h-8 text-white mx-auto mb-2" />
+                  <p className="text-white text-sm font-medium">{item.label}</p>
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Navigation Controls */}
-          
-        </div>
-      </div>
-    </section>
-
-
-    <div className="max-w-4xl mx-auto px-6 py-8">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Frequently Asked Questions</h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-900 pb-4">
-            <div
-              className="flex justify-between items-center cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-500"
-              onClick={() => toggleAnswer(index)}
-            >
-              <span>{faq.question}</span>
-              {openIndex === index ? (
-                <ChevronUpIcon className="w-6 h-6 text-blue-500" />
-              ) : (
-                <ChevronDownIcon className="w-6 h-6 text-gray-600" />
-              )}
+          {/* Bottom Badge */}
+          <div className="absolute bottom-8 left-8 right-8">
+            <div className="bg-white p-4 flex items-center justify-between">
+              <div>
+                <p className="text-gray-900 font-bold">Ready to Move?</p>
+                <p className="text-gray-500 text-sm">
+                  Free consultation available
+                </p>
+              </div>
+              <ArrowRight className="w-6 h-6 text-blue-900" />
             </div>
-            {openIndex === index && (
-              <div className="mt-2 text-gray-700"
-              dangerouslySetInnerHTML={{ __html: faq.answer }}
-            />
-            )}
           </div>
-        ))}
-      </div>
-    </div>
-
-
-        <div className="whatsapp">
-          <a href="https://wa.me/971504153141">
-            <img
-              id="whatsapp"
-              height="40px"
-              src="image/WhatsApp-logo.png"
-              alt=""
-              width={100}
-            />
-          </a>
         </div>
-        <Footer />
-      </>
-    );
-  }
-// }
+      </section>
 
-export default IThomePage;
+      {/* ==================== LOGO SLIDER ==================== */}
+      <section className="py-16 bg-gray-50 border-y border-gray-200">
+        <div className="container mx-auto px-6 lg:px-8">
+          <p className="text-center text-gray-400 mb-8 text-sm uppercase tracking-widest">
+            Trusted by Industry Leaders
+          </p>
+          <LogoSlider />
+        </div>
+      </section>
+
+      {/* ==================== SERVICES - TAB DESIGN ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mb-16">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="h-px w-12 bg-blue-900"></div>
+              <span className="text-blue-900 font-semibold uppercase tracking-wider text-sm">
+                Our Services
+              </span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Complete IT Relocation Solutions
+            </h2>
+            <p className="text-lg text-gray-600">
+              From initial planning to final setup, we provide end-to-end IT
+              relocation services tailored to your business needs.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-8">
+            {/* Tab Navigation */}
+            <div className="lg:col-span-4">
+              <div className="space-y-2 sticky top-24">
+                {services.map((service, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    className={`w-full text-left p-6 transition-all duration-300 border-l-4 ${
+                      activeTab === index
+                        ? "bg-blue-900 text-white border-l-blue-600"
+                        : "bg-gray-50 text-gray-900 border-l-transparent hover:bg-gray-100"
+                    }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <service.icon
+                        className={`w-6 h-6 ${
+                          activeTab === index ? "text-white" : "text-blue-900"
+                        }`}
+                      />
+                      <span className="font-semibold">{service.title}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Tab Content */}
+            <div className="lg:col-span-8">
+              <div className="bg-gray-50 p-8 lg:p-12 h-full">
+                <div className="flex items-center gap-4 mb-6">
+                  {React.createElement(services[activeTab].icon, {
+                    className: "w-12 h-12 text-blue-900",
+                  })}
+                  <h3 className="text-3xl font-bold text-gray-900">
+                    {services[activeTab].title}
+                  </h3>
+                </div>
+
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  {services[activeTab].description}
+                </p>
+
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {services[activeTab].features.map((feature, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 bg-white p-4"
+                    >
+                      <div className="w-8 h-8 bg-blue-900 flex items-center justify-center flex-shrink-0">
+                        <Check className="w-4 h-4 text-white" />
+                      </div>
+                      <span className="text-gray-900 font-medium">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 mt-8 text-blue-900 font-semibold hover:gap-4 transition-all duration-300"
+                >
+                  Learn More About This Service
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== TIMELINE SECTION ==================== */}
+      <section className="py-24 bg-blue-900">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-blue-300"></div>
+              <span className="text-blue-300 font-semibold uppercase tracking-wider text-sm">
+                Our Process
+              </span>
+              <div className="h-px w-12 bg-blue-300"></div>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Relocation Timeline
+            </h2>
+            <p className="text-lg text-blue-200">
+              A structured approach to ensure your IT move is completed on time
+              and within budget.
+            </p>
+          </div>
+
+          {/* Horizontal Timeline */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-blue-700"></div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {timelineSteps.map((step, index) => (
+                <div key={index} className="relative">
+                  {/* Timeline Dot */}
+                  <div className="hidden lg:flex absolute top-12 left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full items-center justify-center z-10">
+                    <div className="w-4 h-4 bg-blue-900 rounded-full"></div>
+                  </div>
+
+                  {/* Card */}
+                  <div className="bg-blue-800/50 backdrop-blur-sm border border-blue-700 p-6 lg:mt-24 hover:bg-blue-800 transition-all duration-300">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-blue-300 text-sm font-semibold uppercase tracking-wider">
+                        {step.phase}
+                      </span>
+                      <span className="text-blue-400 text-sm">{step.duration}</span>
+                    </div>
+
+                    <h3 className="text-xl font-bold text-white mb-4">
+                      {step.title}
+                    </h3>
+
+                    <ul className="space-y-2">
+                      {step.tasks.map((task, taskIndex) => (
+                        <li
+                          key={taskIndex}
+                          className="flex items-center gap-2 text-blue-200 text-sm"
+                        >
+                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                          {task}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== WHY CHOOSE US - ALTERNATING ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-blue-900"></div>
+              <span className="text-blue-900 font-semibold uppercase tracking-wider text-sm">
+                Why Choose Us
+              </span>
+              <div className="h-px w-12 bg-blue-900"></div>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              What Sets Us Apart
+            </h2>
+          </div>
+
+          <div className="space-y-0">
+            {whyChooseUs.map((item, index) => (
+              <div
+                key={index}
+                className={`grid lg:grid-cols-2 ${
+                  index % 2 === 1 ? "lg:direction-rtl" : ""
+                }`}
+              >
+                <div
+                  className={`p-8 lg:p-16 flex items-center ${
+                    index % 2 === 0 ? "bg-gray-50" : "bg-white lg:order-2"
+                  }`}
+                >
+                  <div className={`${index % 2 === 1 ? "lg:ml-auto" : ""}`}>
+                    <span className="text-8xl font-bold text-blue-900/10">
+                      {item.number}
+                    </span>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 -mt-8 mb-4">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className={`bg-blue-900 p-8 lg:p-16 flex items-center justify-center ${
+                    index % 2 === 1 ? "lg:order-1" : ""
+                  }`}
+                >
+                  <div className="w-24 h-24 border-4 border-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-4xl font-bold text-white">
+                      {item.number}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== CTA SECTION - MINIMAL ==================== */}
+      <section className="py-24 bg-gray-900">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+                Ready to Relocate Your Office IT?
+              </h2>
+              <p className="text-gray-400 text-lg mb-8">
+                Get a free consultation and detailed quote for your IT
+                relocation project. Our experts are ready to help.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-4 font-semibold hover:bg-gray-100 transition-all duration-300"
+                >
+                  Get Free Quote
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <a
+                  href="tel:+971000000000"
+                  className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 font-semibold hover:bg-white/10 transition-all duration-300"
+                >
+                  <Phone className="w-5 h-5" />
+                  +971 00 000 0000
+                </a>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { icon: Mail, label: "Email Us", value: "info@onetech.com" },
+                { icon: MessageCircle, label: "WhatsApp", value: "Chat Now" },
+                { icon: MapPin, label: "Location", value: "Dubai, UAE" },
+                { icon: Clock, label: "Available", value: "24/7 Support" },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-white/10 p-6 hover:border-white/30 transition-all duration-300 group cursor-pointer"
+                >
+                  <item.icon className="w-6 h-6 text-white/50 mb-4 group-hover:text-white transition-colors" />
+                  <p className="text-white/50 text-sm mb-1">{item.label}</p>
+                  <p className="text-white font-semibold">{item.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== TESTIMONIALS - SLIDER ==================== */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Left Side */}
+            <div className="lg:col-span-4">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-px w-12 bg-blue-900"></div>
+                <span className="text-blue-900 font-semibold uppercase tracking-wider text-sm">
+                  Testimonials
+                </span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                What Our Clients Say
+              </h2>
+              <p className="text-gray-600 mb-8">
+                Don't just take our word for it. Here's what our clients have to
+                say about our IT relocation services.
+              </p>
+
+              {/* Navigation */}
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={prevTestimonial}
+                  className="w-12 h-12 border-2 border-gray-300 flex items-center justify-center hover:border-blue-900 hover:bg-blue-900 hover:text-white transition-all duration-300"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={nextTestimonial}
+                  className="w-12 h-12 border-2 border-gray-300 flex items-center justify-center hover:border-blue-900 hover:bg-blue-900 hover:text-white transition-all duration-300"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+                <span className="text-gray-500 ml-4">
+                  {currentTestimonial + 1} / {testimonials.length}
+                </span>
+              </div>
+            </div>
+
+            {/* Right Side - Testimonial Card */}
+            <div className="lg:col-span-8">
+              <div className="bg-white p-8 lg:p-12 shadow-xl relative">
+                {/* Quote Mark */}
+                <div className="absolute -top-6 left-12 w-12 h-12 bg-blue-900 flex items-center justify-center">
+                  <span className="text-white text-3xl font-serif">"</span>
+                </div>
+
+                <div className="pt-4">
+                  <div className="flex items-center gap-1 mb-6">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-yellow-500 fill-yellow-500"
+                      />
+                    ))}
+                  </div>
+
+                  <blockquote className="text-2xl lg:text-3xl text-gray-900 font-medium leading-relaxed mb-8">
+                    {testimonials[currentTestimonial].quote}
+                  </blockquote>
+
+                  <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                    <img
+                      src={testimonials[currentTestimonial].image}
+                      alt={testimonials[currentTestimonial].name}
+                      className="w-14 h-14 rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="font-bold text-gray-900">
+                        {testimonials[currentTestimonial].name}
+                      </p>
+                      <p className="text-gray-500">
+                        {testimonials[currentTestimonial].role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FAQ - SIDE BY SIDE ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-12">
+            {/* Left Side */}
+            <div className="lg:col-span-4">
+              <div className="sticky top-24">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="h-px w-12 bg-blue-900"></div>
+                  <span className="text-blue-900 font-semibold uppercase tracking-wider text-sm">
+                    FAQ
+                  </span>
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                  Common Questions
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  Find answers to frequently asked questions about our IT
+                  relocation services.
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 text-blue-900 font-semibold hover:gap-4 transition-all duration-300"
+                >
+                  Still have questions? Contact us
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side - Accordions */}
+            <div className="lg:col-span-8">
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className={`border transition-all duration-300 ${
+                      openIndex === index
+                        ? "border-blue-900 bg-blue-900"
+                        : "border-gray-200 bg-white hover:border-gray-300"
+                    }`}
+                  >
+                    <button
+                      onClick={() =>
+                        setOpenIndex(openIndex === index ? null : index)
+                      }
+                      className="w-full flex items-center justify-between p-6 text-left"
+                    >
+                      <span
+                        className={`font-semibold text-lg pr-4 ${
+                          openIndex === index ? "text-white" : "text-gray-900"
+                        }`}
+                      >
+                        {faq.question}
+                      </span>
+                      <div
+                        className={`w-8 h-8 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
+                          openIndex === index ? "rotate-180" : ""
+                        }`}
+                      >
+                        <ChevronDown
+                          className={`w-5 h-5 ${
+                            openIndex === index ? "text-white" : "text-gray-600"
+                          }`}
+                        />
+                      </div>
+                    </button>
+
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        openIndex === index ? "max-h-96" : "max-h-0"
+                      }`}
+                    >
+                      <div
+                        className={`px-6 pb-6 leading-relaxed ${
+                          openIndex === index
+                            ? "text-blue-100"
+                            : "text-gray-600"
+                        }`}
+                      >
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FINAL CTA - FULL WIDTH ==================== */}
+      <section className="py-16 bg-blue-900">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div>
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
+                Start Your IT Relocation Today
+              </h3>
+              <p className="text-blue-200">
+                Free consultation • Zero obligation • Expert advice
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-8 py-4 font-semibold hover:bg-gray-100 transition-all duration-300"
+              >
+                Schedule Consultation
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="tel:+971000000000"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
+              >
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== WHATSAPP BUTTON ==================== */}
+      <a
+        href="https://wa.me/971504153141"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MessageCircle className="w-7 h-7 text-white" />
+      </a>
+
+      <Footer />
+    </>
+  );
+};
+
+export default ITRelocationPage;
+

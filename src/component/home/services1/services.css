@@ -1,108 +1,380 @@
+/* ═══════════════════════════════════════════════════════════
+   SERVICES SECTION - IMPRESSIVE REDESIGN
+   ═══════════════════════════════════════════════════════════ */
+
+.services1 {
+  position: relative;
+  width: 100%;
+  padding: 80px 20px 120px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  overflow: hidden;
+}
+
+/* ─── Background Decorations ─────────────────────────────── */
+.services-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.bg-circle-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(239,67,35,0.12) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+}
+
+.bg-circle-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(1,16,50,0.08) 0%, transparent 70%);
+  bottom: -150px;
+  left: -100px;
+}
+
+.bg-lines {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(90deg, rgba(1,16,50,0.02) 1px, transparent 1px),
+    linear-gradient(rgba(1,16,50,0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ─── Holder ─────────────────────────────────────────────── */
 .services1 .holder {
-    position: relative;
-    width: 100%;
-  }
-  
-  .services1 .holder .heading {
-    position: relative;
-    text-align: center;
-    margin: 100px 0;
-    padding: 0 50px;
-    font-size: 25px;
-  }
-  
-  .services1 .holder .heading p {
-    position: relative;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ─── Heading ────────────────────────────────────────────── */
+.services1 .holder .heading {
+  position: relative;
+  text-align: center;
+  margin: 0 0 80px;
+  padding: 0 20px;
+}
+
+.services1 .holder .heading .tag-line {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #ef4323;
+  background: rgba(239,67,35,0.08);
+  border: 1px solid rgba(239,67,35,0.15);
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.services1 .holder .heading p {
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.services1 .holder .heading h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #011032;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.services1 .holder .heading h1 span {
+  position: relative;
+  color: #ef4323;
+  display: inline-block;
+}
+
+.services1 .holder .heading h1 span::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(239,67,35,0.15);
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.heading-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ef4323, #ff6b4a);
+  border-radius: 2px;
+  margin: 30px auto 0;
+  transform-origin: center;
+}
+
+/* ─── Cards Grid ─────────────────────────────────────────── */
+.services1 .holder .container0 {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+/* ─── Service Box ────────────────────────────────────────── */
+.services1 .holder .container0 .box {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 24px;
+  padding: 48px 32px 40px;
+  border: 1px solid rgba(1,16,50,0.06);
+  box-shadow: 
+    0 4px 6px -1px rgba(0,0,0,0.03),
+    0 10px 20px -5px rgba(0,0,0,0.05);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Index number watermark */
+.services1 .holder .container0 .box::before {
+  content: attr(data-index);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(1,16,50,0.06);
+  letter-spacing: 0.05em;
+  transition: color 0.3s;
+}
+
+.services1 .holder .container0 .box:hover::before {
+  color: rgba(239,67,35,0.2);
+}
+
+/* Glow effect */
+.box-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(239,67,35,0.08) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.services1 .holder .container0 .box:hover .box-glow {
+  opacity: 1;
+}
+
+/* Pattern overlay */
+.box-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(1,16,50,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.services1 .holder .container0 .box:hover .box-pattern {
+  opacity: 1;
+}
+
+/* Hover state */
+.services1 .holder .container0 .box:hover {
+  border-color: rgba(239,67,35,0.15);
+  box-shadow: 
+    0 20px 40px -15px rgba(239,67,35,0.2),
+    0 0 0 1px rgba(239,67,35,0.05);
+}
+
+/* ─── Featured Box (color class) ─────────────────────────── */
+.services1 .holder .container0 .color {
+  background: linear-gradient(145deg, #011032 0%, #021b4a 100%);
+  border-color: rgba(255,255,255,0.05);
+}
+
+.services1 .holder .container0 .color::before {
+  color: rgba(255,255,255,0.08);
+}
+
+.services1 .holder .container0 .color:hover::before {
+  color: rgba(239,67,35,0.4);
+}
+
+.services1 .holder .container0 .color .box-glow {
+  background: radial-gradient(
+    circle at center,
+    rgba(239,67,35,0.15) 0%,
+    transparent 50%
+  );
+}
+
+.services1 .holder .container0 .color:hover {
+  box-shadow: 
+    0 25px 50px -15px rgba(1,16,50,0.5),
+    0 0 0 1px rgba(239,67,35,0.2);
+}
+
+/* ─── Icon Container ─────────────────────────────────────── */
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(239,67,35,0.1) 0%, rgba(239,67,35,0.02) 100%);
+  border: 2px solid rgba(239,67,35,0.12);
+  border-radius: 20px;
+  margin-bottom: 28px;
+  color: #ef4323;
+  transition: all 0.4s;
+}
+
+.icon-container svg {
+  width: 36px;
+  height: 36px;
+}
+
+.services1 .holder .container0 .box:hover .icon-container {
+  background: linear-gradient(135deg, #ef4323 0%, #ff6b4a 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 12px 24px -6px rgba(239,67,35,0.4);
+  transform: translateY(-4px);
+}
+
+/* Featured box icon */
+.services1 .holder .container0 .color .icon-container {
+  background: linear-gradient(135deg, rgba(239,67,35,0.2) 0%, rgba(239,67,35,0.05) 100%);
+  border-color: rgba(239,67,35,0.25);
+}
+
+/* ─── Typography ─────────────────────────────────────────── */
+.services1 .holder .container0 h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #011032;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+  transition: color 0.3s;
+}
+
+.services1 .holder .container0 .box:hover h4 {
+  color: #ef4323;
+}
+
+.services1 .holder .container0 .color h4 {
+  color: #ef4323;
+}
+
+.services1 .holder .container0 .p,
+.services1 .holder .container0 .p-main {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.services1 .holder .container0 .color .p-main {
+  color: rgba(255,255,255,0.7);
+}
+
+/* ─── Button ─────────────────────────────────────────────── */
+.services1 .holder .container0 .more {
+  width: auto;
+  display: inline-block;
+  background: transparent;
+  margin: 0;
+  border-radius: 0;
+}
+
+.services1 .holder .container0 .more .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #ef4323 0%, #dc2f0f 100%);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px -3px rgba(239,67,35,0.4);
+}
+
+.services1 .holder .container0 .more .btn:hover {
+  box-shadow: 0 8px 25px -5px rgba(239,67,35,0.5);
+  transform: translateY(-2px);
+}
+
+.services1 .holder .container0 .more .btn svg {
+  transition: transform 0.3s;
+}
+
+.services1 .holder .container0 .more .btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media screen and (max-width: 1140px) {
   .services1 .holder .container0 {
-    position: relative;
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 0 100px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media screen and (max-width: 1140px) {
-    .services1 .holder .container0 {
-      position: relative;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 0 0 400px;
-    }
+}
+
+@media screen and (max-width: 770px) {
+  .services1 {
+    padding: 60px 16px 80px;
   }
-  
-  @media screen and (max-width: 770px) {
-    .services1 .holder .container0 {
-      position: relative;
-      grid-template-columns: repeat(1, 1fr);
-      margin: 0 0 400px;
-    }
+
+  .services1 .holder .container0 {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  
-  @media screen and (max-width: 500px) {
-    .services1 .holder .container0 {
-      margin: 0 0 350px;
-    }
+
+  .services1 .holder .heading {
+    margin-bottom: 50px;
   }
-  
-  @media screen and (max-width: 450px) {
-    .services1 .holder .container0 {
-      margin: 0 0 300px;
-    }
-  }
-  
+
   .services1 .holder .container0 .box {
-    position: relative;
-    width: 100%;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: box-shadow 0.3 ease-in-out;
-    padding: 40px;
+    padding: 36px 24px 32px;
   }
-  
-  .services1 .holder .container0 .box:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 50px 0 rgba(0, 0, 0, 0.1);
+
+  .icon-container {
+    width: 70px;
+    height: 70px;
   }
-  
-  .services1 .holder .container0 .color {
-    background-color: #011032;
+}
+
+@media screen and (max-width: 500px) {
+  .services1 .holder .heading h1 {
+    font-size: 1.75rem;
   }
-  
-  .services1 .holder .container0 img {
-    height: 50px;
-    margin: 25px;
-  }
-  
+
   .services1 .holder .container0 h4 {
-    color: #ef4323;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
   }
-  
-  .services1 .holder .container0 .box0 h4 {
-    color: #ef4323;
-  }
-  
-  .services1 .holder .container0 .p {
-    margin-bottom: 20px;
-  }
-  
-  .services1 .holder .container0 .p-main {
-    margin-bottom: 20px;
-  }
-  
-  .services1 .holder .container0 .more {
-    width: 130px;
-    background-color: #ef4323;
-    margin: auto;
-    border-radius: 30px;
-  }
-  
-  .services1 .holder .container0 .box0 .more {
-    background-color: #ef4323;
-  }
-  
+}

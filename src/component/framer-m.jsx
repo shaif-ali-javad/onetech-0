@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./framer-m.css";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useScroll, useInView } from "framer-motion";
 import IMG_TXT from "./home/Services/img-component/img-txt.jsx";
 import img0 from "./home/Services/image/parelall-scroll/0(1).jpg";
 import img1 from "./home/Services/image/parelall-scroll/1(1).jpg";
@@ -16,124 +16,75 @@ import img10 from "./home/Services/image/parelall-scroll/10(1).jpg";
 import img11 from "./home/Services/image/parelall-scroll/11(1).png";
 import img12 from "./home/Services/image/parelall-scroll/12(1).jpg";
 
-function ServicesPage() {
-  const content = [
-    {
-      img: img0,
-      title: "Office Automation",
-      description: "Maximize office productivity and streamline workflow with an efficient fleet of office equipment including Colour & B/W Multifunctional Printers."
-    },
-    {
-      img: img1,
-      title: "Software Solutions",
-      description: "Capture, store, and manage your documents digitally to improve accessibility and collaboration while reducing paper clutter."
-    },
-    {
-      img: img2,
-      title: "AV Solutions",
-      description: "Comprehensive IT solutions including network setup, cybersecurity, and data backup to keep your business running smoothly."
-    },
-    {
-      img: img3,
-      title: "Structured Cabling",
-      description: "Custom website development services to help you establish a strong online presence and engage with your customers effectively."
-    },
-    {
-      img: img4,
-      title: "ELV Systems",
-      description: "Scalable cloud computing services to store, manage, and process your data, enabling remote access and collaboration."
-    },
-    {
-      img: img5,
-      title: "Backup and Disaster Recovery Management",
-      description: "Reliable technical support to assist you with any hardware or software issues, ensuring minimal downtime for your business."
-    },
-    {
-      img: img6,
-      title: "Home Automation",
-      description: "Creative graphic design services for branding, marketing materials, and more to help your business stand out."
-    },
-    {
-      img: img7,
-      title: "Cloud Services",
-      description: "Effective digital marketing strategies including SEO, social media marketing, and email campaigns to grow your online presence."
-    },
-    {
-      img: img8,
-      title: "Maintenance & Support",
-      description: "Professional training and workshops to upskill your workforce and enhance their productivity and efficiency."
-    },
-    {
-      img: img9,
-      title: "AI Based Solutions",
-      description: "Expert consulting services to help you identify opportunities for improvement and implement effective solutions."
-    },
-    {
-      img: img10,
-      title: "Data Centre Solutions",
-      description: "Outsource your non-core activities to us and focus on your main business while we handle the rest."
-    },
-    {
-      img: img11,
-      title: "Microsoft Azure / Office 365",
-      description: "Regular maintenance and repair services for your office equipment to ensure they are always in top working condition."
-    },
-    {
-      img: img12,
-      title: "Web development",
-      description: "Advanced security solutions including surveillance cameras and alarm systems to protect your business premises."
-    }
-  ];
+function ServicePanel({ item, index }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-150px" });
+  
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+  
+  // YOUR EXACT DIRECTION - NOT CHANGED
+  const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <>
-    
-    <div className="App">
-      <h1 className="box-h">
-        <IMG_TXT />
-      </h1>
-      <div className="line text-center p-11 text-black">
-            <h1 className="text-3xl font-medium mb-3">Value Added Range of ICT Solutions</h1>
-            <p className="">
-              Providing you best-in-class Communication & Technology Solutions
-              to meet
-              <br /> today’s business development challenges
-            </p>
-          </div>
-      <div className="services-container">
-        {content.map((item, index) => {
-          const ref = React.useRef(null);
-          const { scrollYProgress } = useScroll({
-            target: ref,
-            offset: ["start end", "end start"]
-          });
-          
-          const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
-
-          return (
-            <div key={index} className="service-item" ref={ref}>
-              <div className="boxes">
-                <div style={{ overflow: 'hidden', borderRadius: '8px' }}>
-                  <motion.div style={{ y }}>
-                    <img 
-                      src={item.img}
-                      alt={item.title}
-                      className="service-image"
-                    />
-                  </motion.div>
-                </div>
-                <div className="text-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+    <section ref={ref} className="panel" data-index={String(index + 1).padStart(2, '0')}>
+      <div className="media-wrap">
+        <motion.div className="media-inner" style={{ y }}>
+          <img src={item.img} alt={item.title} className="service-image" loading="lazy" />
+        </motion.div>
       </div>
-    </div>
-    </>
+
+      <motion.div 
+        className="content-wrap"
+        initial={{ opacity: 0, y: 40 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <div className="content-card">
+          <span className="eyebrow">ICT Solution</span>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <a className="cta">
+            Explore
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </motion.div>
+    </section>
   );
 }
 
-export default ServicesPage;
+export default function ServicesPage() {
+  const content = [
+    { img: img0, title: "Office Automation", description: "Maximize office productivity and streamline workflow with an efficient fleet of office equipment including Colour & B/W Multifunctional Printers." },
+    { img: img1, title: "Software Solutions", description: "Capture, store, and manage your documents digitally to improve accessibility and collaboration while reducing paper clutter." },
+    { img: img2, title: "AV Solutions", description: "Comprehensive IT solutions including network setup, cybersecurity, and data backup to keep your business running smoothly." },
+    { img: img3, title: "Structured Cabling", description: "Custom website development services to help you establish a strong online presence and engage with your customers effectively." },
+    { img: img4, title: "ELV Systems", description: "Scalable cloud computing services to store, manage, and process your data, enabling remote access and collaboration." },
+    { img: img5, title: "Backup and Disaster Recovery Management", description: "Reliable technical support to assist you with any hardware or software issues, ensuring minimal downtime for your business." },
+    { img: img6, title: "Home Automation", description: "Creative graphic design services for branding, marketing materials, and more to help your business stand out." },
+    { img: img7, title: "Cloud Services", description: "Effective digital marketing strategies including SEO, social media marketing, and email campaigns to grow your online presence." },
+    { img: img8, title: "Maintenance & Support", description: "Professional training and workshops to upskill your workforce and enhance their productivity and efficiency." },
+    { img: img9, title: "AI Based Solutions", description: "Expert consulting services to help you identify opportunities for improvement and implement effective solutions." },
+    { img: img10, title: "Data Centre Solutions", description: "Outsource your non-core activities to us and focus on your main business while we handle the rest." },
+    { img: img11, title: "Microsoft Azure / Office 365", description: "Regular maintenance and repair services for your office equipment to ensure they are always in top working condition." },
+    { img: img12, title: "Web development", description: "Advanced security solutions including surveillance cameras and alarm systems to protect your business premises." }
+  ];
+
+  return (
+    <div className="App">
+      <h1 className="box-h"><IMG_TXT /></h1>
+      
+      <div className="line text-center p-11 text-black">
+        <h1 className="text-3xl font-medium mb-3">Value Added Range of ICT Solutions</h1>
+        <p>Providing you best-in-class Communication & Technology Solutions to meet<br/> today’s business development challenges</p>
+      </div>
+      
+      <div className="services-showcase">
+        {content.map((item, i) => <ServicePanel key={i} item={item} index={i} />)}
+      </div>
+    </div>
+  );
+}

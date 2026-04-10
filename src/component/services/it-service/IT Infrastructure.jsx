@@ -1,916 +1,817 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import LogoSlider from "../../home/partners/carousel/logo-carousel";
-import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import Navbar from "../../home/navbar/header";
 import Footer from "../../home/footer/footer";
 
-export const IThomePage = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+import {
+  ChevronDown,
+  ChevronUp,
+  Check,
+  Shield,
+  Clock,
+  Headphones,
+  Server,
+  Database,
+  Monitor,
+  Wifi,
+  Lock,
+  ArrowRight,
+  ArrowDown,
+  Phone,
+  Mail,
+  MessageCircle,
+  Star,
+  Users,
+  Award,
+  Zap,
+  CheckCircle,
+  Settings,
+  HardDrive,
+  Network,
+  Cpu,
+  Cloud,
+  Globe,
+  Layers,
+  Activity,
+  Eye,
+  Plus,
+  Minus,
+} from "lucide-react";
 
+export const ITInfrastructurePage = () => {
+  const [openFaq, setOpenFaq] = useState(null);
+  const [activeService, setActiveService] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  // Hero Stats
+  const heroStats = [
+    { value: "15+", label: "Years Experience" },
+    { value: "500+", label: "Projects Delivered" },
+    { value: "99.9%", label: "Uptime Guarantee" },
+    { value: "50+", label: "Expert Engineers" },
+  ];
+
+  // Main Services
+  const mainServices = [
+    {
+      id: 1,
+      icon: Server,
+      title: "Server Solutions",
+      shortDesc: "Enterprise-grade server infrastructure",
+      description:
+        "Deploy, manage, and optimize your server infrastructure with our comprehensive solutions including physical servers, virtual environments, and hybrid setups.",
+      features: [
+        "Server deployment & configuration",
+        "Virtualization (VMware, Hyper-V)",
+        "Performance optimization",
+        "24/7 monitoring & support",
+      ],
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      id: 2,
+      icon: Network,
+      title: "Network Infrastructure",
+      shortDesc: "Robust network design & management",
+      description:
+        "Build a reliable network backbone with our expert design, implementation, and management services covering LAN, WAN, and wireless solutions.",
+      features: [
+        "Network design & architecture",
+        "LAN/WAN implementation",
+        "Wireless solutions",
+        "Network security",
+      ],
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      id: 3,
+      icon: Cloud,
+      title: "Cloud Services",
+      shortDesc: "Seamless cloud integration",
+      description:
+        "Leverage the power of cloud computing with our migration, management, and optimization services for AWS, Azure, and Google Cloud platforms.",
+      features: [
+        "Cloud migration",
+        "Hybrid cloud setup",
+        "Cloud optimization",
+        "Multi-cloud management",
+      ],
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      id: 4,
+      icon: Shield,
+      title: "Security Solutions",
+      shortDesc: "Comprehensive cybersecurity",
+      description:
+        "Protect your business with enterprise-grade security solutions including firewalls, threat detection, and security audits.",
+      features: [
+        "Firewall management",
+        "Threat detection & response",
+        "Security audits",
+        "Compliance management",
+      ],
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+  ];
+
+  // Infrastructure Components
+  const infraComponents = [
+    { icon: Server, title: "Servers", desc: "Physical & Virtual" },
+    { icon: Database, title: "Storage", desc: "SAN, NAS, Cloud" },
+    { icon: Network, title: "Networking", desc: "LAN, WAN, WiFi" },
+    { icon: Shield, title: "Security", desc: "Firewall, VPN" },
+    { icon: Cloud, title: "Cloud", desc: "Public, Private, Hybrid" },
+    { icon: Monitor, title: "Endpoints", desc: "Desktops, Laptops" },
+    { icon: Cpu, title: "Data Center", desc: "Design & Management" },
+    { icon: Activity, title: "Monitoring", desc: "24/7 NOC Services" },
+  ];
+
+  // Benefits
+  const benefits = [
+    {
+      title: "Reduce Costs",
+      description: "Optimize your IT spending with efficient infrastructure solutions that maximize ROI.",
+      stat: "40%",
+      statLabel: "Cost Reduction",
+    },
+    {
+      title: "Increase Uptime",
+      description: "Ensure business continuity with highly available and redundant systems.",
+      stat: "99.9%",
+      statLabel: "Uptime SLA",
+    },
+    {
+      title: "Enhance Security",
+      description: "Protect your data and systems with enterprise-grade security measures.",
+      stat: "100%",
+      statLabel: "Compliance",
+    },
+    {
+      title: "Scale Easily",
+      description: "Grow your infrastructure seamlessly as your business expands.",
+      stat: "3x",
+      statLabel: "Faster Scaling",
+    },
+  ];
+
+  // Process Steps
+  const processSteps = [
+    {
+      number: "01",
+      title: "Discovery",
+      description: "We analyze your current infrastructure, understand your business goals, and identify improvement areas.",
+    },
+    {
+      number: "02",
+      title: "Design",
+      description: "Our architects create a comprehensive infrastructure blueprint tailored to your specific needs.",
+    },
+    {
+      number: "03",
+      title: "Implementation",
+      description: "Expert engineers deploy and configure your new infrastructure with minimal disruption.",
+    },
+    {
+      number: "04",
+      title: "Optimization",
+      description: "Continuous monitoring and optimization ensure peak performance and reliability.",
+    },
+  ];
+
+  // Testimonials
+  const testimonials = [
+    {
+      quote: "Onetech transformed our IT infrastructure completely. We've seen a 50% improvement in system performance.",
+      name: "Ahmed Al Rashid",
+      role: "CTO, Dubai Tech Corp",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      quote: "Their expertise in network infrastructure helped us achieve 99.99% uptime. Exceptional service!",
+      name: "Sarah Johnson",
+      role: "IT Director, Global Logistics",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      quote: "The cloud migration was seamless. Onetech's team managed everything professionally.",
+      name: "Michael Chen",
+      role: "CEO, FinTech Solutions",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  ];
+
+  // FAQs
   const faqs = [
     {
       question: "What are IT Infrastructure Solutions?",
-      answer:
-        "<span class='font-semibold text-indigo-600'> IT Infrastructure </span> refers to the procurement, implementation, and support of essential hardware, software, network, and security solutions that are vital to your business operations. This includes servers, data centers, network equipment, and cloud services among others.",
+      answer: "IT Infrastructure Solutions encompass the hardware, software, network resources, and services required for the existence, operation, and management of an enterprise IT environment. This includes servers, data centers, network equipment, storage systems, and cloud services.",
     },
     {
-      question:
-        "How do I know if my current IT infrastructure needs an upgrade?",
-      answer:
-        "Most businesses should regularly consider an IT Infrastructure upgrade every 2-3 years to remain up to date with the latest technologies and solutions. As a general rule, if your business infrastructure faces regular downtime, sluggish performance, outdated equipment and basically struggling with evolving user demands, then it's time to look into upgrading your IT Infrastructure. <br/> <br/> The Onetech Team also provides infrastructure audits to determine the performance of your current systems and recommend improvements as per your pain points.",
+      question: "How often should IT infrastructure be upgraded?",
+      answer: "Most businesses should evaluate their IT infrastructure every 2-3 years. Signs that indicate an upgrade is needed include frequent downtime, slow performance, security vulnerabilities, and inability to support new applications or increased user demands.",
     },
     {
-      question: "Why is a strong IT infrastructure important for my business?",
-      answer:
-        "Strong IT Infrastructure practically pays for itself by providing smooth operation, data management and security, clear communication and consistent connectivity. It also allows you to improve business productivity and provides security to your business against a number of potential threats.",
+      question: "What is the difference between on-premise and cloud infrastructure?",
+      answer: "On-premise infrastructure is hosted locally within your organization, giving you complete control but requiring significant capital investment. Cloud infrastructure is hosted by third-party providers, offering flexibility, scalability, and reduced upfront costs.",
     },
     {
-      question: "How can Onetech help with IT Infrastructure?",
-      answer:
-        "Our team offers complete end-to-end IT Infrastructure services consisting of the design, installation, and maintenance of your IT Systems. We even offer custom infrastructure solutions that are tailor-made to address your unique business needs, ranging from network design, server setup, cloud services, and data security just to name a few.",
+      question: "How do you ensure data security in IT infrastructure?",
+      answer: "We implement multiple security layers including firewalls, encryption, access controls, regular security audits, intrusion detection systems, and compliance with industry standards like ISO 27001 and GDPR.",
     },
     {
-      question: "Can Onetech help design a scalable IT infrastructure?",
-      answer:
-        "Indeed, we understand that businesses are evolving entities, where yesterday’s solutions are not always enough for the needs of tomorrow, that is why every infrastructure solution we design is made with scalability in mind, easily allowing you to increase users, services, or capacity without any major disruptions to your business.",
+      question: "Can you integrate with existing systems?",
+      answer: "Yes, our solutions are designed to integrate seamlessly with your existing systems. We conduct thorough assessments to ensure compatibility and create migration plans that minimize disruption to your operations.",
     },
     {
-      question:
-        "Can Onetech help with compliance and regulations in IT infrastructure?",
-      answer:
-        "Yes, all our infrastructure products and solutions adhere to the appropriate industry standards and regulations. Our compliance-first approach to infrastructure ensures that your data remains safe and protected against any potential issues down the road.",
+      question: "What support do you provide after implementation?",
+      answer: "We offer comprehensive post-implementation support including 24/7 monitoring, regular maintenance, performance optimization, security updates, and dedicated technical support through multiple channels.",
     },
   ];
 
-  const toggleAnswer = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null);
-    } else {
-      setOpenIndex(index);
-    }
-  };
-
-  const IThomePage = [
-    {
-      quote:
-        "“From the initial IT consultation to the seamless implementation, Onetech demonstrated a deep understanding of our unique IT Infrastructure needs. Their expertise in network security, cloud computing, and IT infrastructure management has significantly enhanced our operational efficiency.”",
-      name: "Judith Black",
-      role: "Assistant Finance Manager of Al Rama International FZCO",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    {
-      quote:
-        "“Onetech’s responsiveness is impressive; they are always quick to address any issues that arise, minimizing downtime and keeping our operations seamless. Beyond just maintenance, Onetech offers valuable advice and proactive solutions, helping us stay ahead with the latest technology and best practices.”",
-      name: "Alex Johnson",
-      role: "Chief Product Officer of Arabyads",
-      image:
-        "https://images.unsplash.com/photo-1502767089025-d6f4b74b5ea3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    {
-      quote:
-        "“Onetech's proactive maintenance approach is a standout feature. They regularly monitor our systems, perform routine check-ups, and provide detailed reports on our IT health.Their dedication to proactive maintenance and their ability to deliver outstanding results have truly exceeded our expectations.”",
-      name: "Sarah Williams",
-      role: "Director of International Textile Exports Ltd",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Automatic sliding effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === IThomePage.length - 1 ? 0 : prevIndex + 1
+      setCurrentTestimonial((prev) =>
+        prev === testimonials.length - 1 ? 0 : prev + 1
       );
-    }, 10000); // Change slide every 5 seconds
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [IThomePage.length]);
-
-  // const prevSlide = () => {
-  //   setCurrentIndex(
-  //     currentIndex === 0 ? IThomePage.length - 1 : currentIndex - 1
-  //   );
-  // };
-
-  // const nextSlide = () => {
-  //   setCurrentIndex(
-  //     currentIndex === IThomePage.length - 1 ? 0 : currentIndex + 1
-  //   );
-  // };
-
-  // render() {
   return (
     <>
       <Navbar />
-      <div className="bg-gray">
-        <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-            aria-hidden="true"
-          >
-            <div
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            ></div>
-          </div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-38 lg:py-36">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-800/10 hover:ring-gray-800/20 tracking-[.35em] uppercase">
-                TRANSFORM RELIABLY
-                {/* <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a> */}
-              </div>
-            </div>
-            <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-800 sm:text-7xl">
-                IT Infrastructure Solutions in UAE
-              </h1>
-              <p className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
-                Complete IT Infrastructure design, installation and support to
-                help monitor and maintain your IT systems by 24/7.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="/"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
-                <a href="/" className="text-sm/6 font-semibold text-gray-800">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-            aria-hidden="true"
-          >
-            <div
-              className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            ></div>
-          </div>
+
+      {/* ==================== HERO SECTION - FULL IMAGE OVERLAY ==================== */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="IT Infrastructure"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/85 to-gray-900/95"></div>
         </div>
-      </div>
 
-      <LogoSlider />
+        {/* Grid Pattern Overlay */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)`,
+            backgroundSize: "50px 50px",
+          }}
+        ></div>
 
-      <div class="bg-gray py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
-              24/7 IT Support
-            </h2>
-            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl lg:text-balance">
-              IT Infrastructure Services in Dubai
-            </p>
-            <p class="mt-6 text-lg/8 text-gray-600">
-              A strong IT infrastructure is crucial for your business’s success,
-              serving as the backbone that ensures efficiency in today’s
-              competitive market. At Onetech, we stay ahead of the latest IT
-              infrastructure advancements to provide you with the ideal setup.
-              <br />
-              <br />
-              Based in Dubai, UAE, we are a leading provider of{" "}
-              <span class="font-semibold text-indigo-600">
-                IT infrastructure management services
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 text-center py-32">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 mb-8">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span className="text-white text-sm font-medium uppercase tracking-widest">
+                Enterprise IT Solutions
               </span>
-              , catering to both small and large enterprises. Whether you need
-              expert advice on your IT infrastructure or require comprehensive
-              management of its various components, Onetech has you covered.
+            </div>
+
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8">
+              IT Infrastructure
+              <span className="block text-blue-300">Solutions in UAE</span>
+            </h1>
+
+            <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Complete IT infrastructure design, implementation, and 24/7 support
+              to power your business growth and digital transformation.
             </p>
-          </div>
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg
-                      class="size-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </div>
-                  Strategic IT Consulting
-                </dt>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg
-                      class="size-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </div>
-                  Statistical Computing
-                </dt>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg
-                      class="size-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </div>
-                  IT Managed Services
-                </dt>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-800">
-                  <div class="absolute left-0 top-[-6px] flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg
-                      class="size-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </div>
-                  Workplace Transformation
-                </dt>
-              </div>
-            </dl>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center gap-3 bg-white text-gray-900 px-8 py-4 font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+              >
+                Start Your Project
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+              </Link>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center gap-3 border-2 border-white/50 text-white px-8 py-4 font-bold text-lg hover:bg-white/10 transition-all duration-300"
+              >
+                Explore Services
+                <ArrowDown className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
-          <div class=" py-24 sm:py-32">
-            <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-              <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
-                <div class="relative lg:row-span-2">
-                  <div class="absolute inset-px rounded-lg bg-gray-100 lg:rounded-l-[2rem]"></div>
-                  <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)] pb-8">
-                    <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
-                        IT infrastructure
-                      </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                        Empowering Your Business with Reliable Technology
-                      </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                        Our customized IT infrastructure services provide a
-                        robust framework for your organization's needs
-                      </p>
-                    </div>
-                  </div>
-                  <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
-                </div>
-
-                <div class="relative lg:row-span-2">
-                  <div class="absolute inset-px rounded-lg bg-gray-100 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-                  <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)] pb-8">
-                    <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-5 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center uppercase">
-                        Structure Cabling
-                      </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                        For Seamless Connectivity & Network Performance
-                      </p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                        We design structured cabling systems tailored to your
-                        current and future equipment needs
-                      </p>
-                    </div>
-                  </div>
-                  <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-                </div>
-              </div>
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
+            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
+              <div className="w-1.5 h-3 bg-white rounded-full animate-bounce"></div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
-          class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
-        />
-        <div
-          class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          ></div>
-        </div>
-        <div
-          class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-          aria-hidden="true"
-        >
-          <div
-            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          ></div>
-        </div>
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-auto text-center">
-            <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-              Optimize Your IT Infrastructure with a Free Assessment Today
-            </h2>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
-              Safeguard Your Business with Reliable IT Infrastructure Services
-              in Dubai.
-            </p>
-          </div>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="/"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
-            <a href="/" className="text-sm/6 font-semibold text-gray-200">
-              Learn more <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative isolate overflow-hidden bg-gray px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-        <div class="absolute inset-0 -z-10 overflow-hidden">
-          <svg
-            class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-                width="200"
-                height="200"
-                x="50%"
-                y="-1"
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M100 200V.5M.5 .5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-              <path
-                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                stroke-width="0"
-              />
-            </svg>
-            <rect
-              width="100%"
-              height="100%"
-              stroke-width="0"
-              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
-            />
-          </svg>
-        </div>
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          {/* <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-      <div class="lg:pr-4">
-        <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em]">TRANSFORM RELIABLY</p>
-          <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-200 sm:text-5xl">A better workflow</h1>
-          <p class="mt-6 text-xl/8 text-gray-300">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
-        </div>
-      </div>
-    </div> */}
-          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            {/* <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt=""/> */}
-
-            <div class="lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 pt-8">
-              <div class="lg:pr-4">
-                <div class="lg:max-w-lg">
-                  <p class="text-base/7 font-semibold text-indigo-600 tracking-[.35em] uppercase">
-                    TRANSFORM RELIABLY
+        {/* Bottom Stats Bar */}
+        <div className="absolute bottom-0 left-0 right-0 bg-white">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200">
+              {heroStats.map((stat, index) => (
+                <div key={index} className="py-8 text-center">
+                  <p className="text-3xl lg:text-4xl font-bold text-blue-900 mb-1">
+                    {stat.value}
                   </p>
-                  <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-800 sm:text-5xl">
-                    Upgrade Your Conventional IT Infrastructure
-                  </h1>
-                  <p class="mt-6 text-xl/8 text-gray-600">
-                    By offering{" "}
-                    <span class=" font-semibold text-indigo-600">
-                      IT Infrastructure Services in Dubai
-                    </span>
-                    , we deliver value across the IT landscape by driving
-                    innovation, enabling transformation, and fostering growth
-                    for your business.
+                  <p className="text-gray-500 text-sm uppercase tracking-wider">
+                    {stat.label}
                   </p>
                 </div>
-              </div>
+              ))}
             </div>
-          </div>
-          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-                <ul class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Help Desk & Service Management
-                      </strong>
-                      <br /> We provide 24x7 support across all levels, ITSM
-                      implementation, and management of incidents, problems,
-                      changes, configurations, capacity, assets, and releases.
-                    </span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Workplace (End User) Management
-                      </strong>
-                      <br />
-                      We manage desktops, laptops, smart devices (BYOD), hybrid
-                      cloud infrastructures, VDI environments, mobile assets,
-                      and identity and access.
-                    </span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Application Support Management
-                      </strong>
-                      <br /> Our services include ITIL consulting, application
-                      support, portfolio rationalization, AI/ML-driven
-                      automation, and infrastructure optimization.
-                    </span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Datacenter Management
-                      </strong>
-                      <br /> We manage servers, databases, backups,
-                      virtualization, storage, and cloud environments, offering
-                      disaster recovery, security, and professional services.
-                    </span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Network Management
-                      </strong>
-                      <br />
-                      We handle LAN, WAN, Telco networks, Wi-Fi, NOC operations,
-                      and provide 24x7 technical support, including wireless
-                      user access management.
-                    </span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <svg
-                      class="mt-1 size-5 flex-none text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 20 25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>
-                      <strong class="font-semibold text-gray-800">
-                        Security Management
-                      </strong>
-                      <br /> Our services include firewall management, VPNs,
-                      malware analysis, IDS/IPS, threat monitoring, incident
-                      management, SOC operations, and threat intelligence.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        class="w-full rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] m-auto mb-11"
-        src="https://cubezix.com/wp-content/uploads/2024/08/Cubezix-Workflow.svg"
-        alt=""
-      />
-
-      <div class="">
-        <div class="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:gap-x-20 lg:px-24 lg:pt-0">
-            <svg
-              viewBox="0 0 1024 1024"
-              class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-              aria-hidden="true"
-            >
-              <circle
-                cx="512"
-                cy="512"
-                r="512"
-                fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                fill-opacity="0.7"
-              />
-              <defs>
-                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                  <stop stop-color="#7775D6" />
-                  <stop offset="1" stop-color="#E935C1" />
-                </radialGradient>
-              </defs>
-            </svg>
-            <div class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 class=" text-base/7 font-semibold text-indigo-600 tracking-[.35em] mb-3 uppercase">
-                Building the Future of Connectivity
-              </h2>
-              <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Business IT Infrastructure Solutions
-              </h2>
-
-              <p class="mt-2 text-pretty text-lg/8 text-gray-300">
-                Build a reliable technology foundation that supports your goals.
-              </p>
-
-              <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start pl-6">
-                <a
-                  href="/"
-                  class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Get started
-                </a>
-                <a href="/" class="text-sm/6 font-semibold text-white">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div>
-
-              <p class="mt-6 text-pretty text-lg/8 text-gray-300">
-                At Onetech, we provide comprehensive IT infrastructure solutions
-                tailored to meet the unique needs of your business. Our services
-                ensure that your IT operations run smoothly, efficiently, and
-                securely. These components work together to provide a stable and
-                secure environment for an organization's IT needs, enabling
-                efficient data processing, communication, and management of
-                resources.
-              </p>
-
-              <hr className="mt-10" />
-
-              <div class=" pt-10 sm:pt-10">
-                <div class=" max-w-7xl">
-                  <div class=" mt-10 max-w-2xl sm:mt-10 lg:mt-2 lg:max-w-5xl">
-                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-16">
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg
-                              class="size-6 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke-width="1.5"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                              data-slot="icon"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                          </div>
-                          Structured Cabling
-                        </dt>
-                      </div>
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg
-                              class="size-6 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke-width="1.5"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                              data-slot="icon"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                          </div>
-                          CCTV Solutions
-                        </dt>
-                      </div>
-                      <div class="relative pl-14">
-                        <dt class="text-base/7 font-semibold text-gray-100 whitespace-nowrap pt-1.5">
-                          <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                            <svg
-                              class="size-6 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke-width="1.5"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                              data-slot="icon"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                          </div>
-                          Access Control & Time Attendance
-                        </dt>
-                      </div>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative mt-16 h-80 lg:mt-8">
-              <img
-                class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                src="https://cubezix.com/wp-content/uploads/2024/02/IT-Infrastrucutre.webp"
-                alt="App screenshot"
-                width="1824"
-                height="1080"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-
-        <div className="mx-auto max-w-4xl">
-          {/* <img
-          className="mx-auto h-12"
-          src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
-          alt=""
-        /> */}
-
-          <div className="relative mt-10">
-            {/* Carousel */}
-            <div className="overflow-hidden">
-              <div
-                className="flex transition-transform duration-300"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {IThomePage.map((testimonial, index) => (
-                  <figure
-                    key={index}
-                    className="min-w-full text-center px-4 sm:px-6"
-                  >
-                    <blockquote className="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-                      <p>{testimonial.quote}</p>
-                    </blockquote>
-                    <figcaption className="mt-1">
-                      <img
-                        className="mx-auto size-10 rounded-full"
-                        // src={testimonial.image}
-                        alt={testimonial.name}
-                      />
-                      <div className="mt-1 flex items-center justify-center space-x-3 text-base">
-                        <div className="font-semibold text-gray-900">
-                          {testimonial.name}
-                        </div>
-                        <svg
-                          viewBox="0 0 2 2"
-                          width="3"
-                          height="3"
-                          aria-hidden="true"
-                          className="fill-gray-900"
-                        >
-                          <circle cx="1" cy="1" r="1" />
-                        </svg>
-                        <div className="text-gray-600">{testimonial.role}</div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </div>
-
-            {/* Navigation Controls */}
           </div>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-6 py-8">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
-          Frequently Asked Questions
-        </h2>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-900 pb-4">
-              <div
-                className="flex justify-between items-center cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-500"
-                onClick={() => toggleAnswer(index)}
-              >
-                <span>{faq.question}</span>
-                {openIndex === index ? (
-                  <ChevronUpIcon className="w-6 h-6 text-blue-500" />
-                ) : (
-                  <ChevronDownIcon className="w-6 h-6 text-gray-600" />
-                )}
-              </div>
-              {openIndex === index && (
-                <div
-                  className="mt-2 text-gray-700"
-                  dangerouslySetInnerHTML={{ __html: faq.answer }}
-                />
-              )}
-            </div>
-          ))}
+      {/* ==================== LOGO SLIDER ==================== */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="h-px flex-1 bg-gray-200"></div>
+            <p className="text-gray-400 text-sm uppercase tracking-widest whitespace-nowrap">
+              Trusted by Leading Enterprises
+            </p>
+            <div className="h-px flex-1 bg-gray-200"></div>
+          </div>
+          <LogoSlider />
         </div>
-      </div>
+      </section>
 
-      <div className="whatsapp">
-        <a href="https://wa.me/971504153141">
-          <img
-            id="whatsapp"
-            height="40px"
-            src="image/WhatsApp-logo.png"
-            alt=""
-            width={100}
-          />
-        </a>
-      </div>
+      {/* ==================== INFRASTRUCTURE COMPONENTS - GRID ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Complete Infrastructure Ecosystem
+            </h2>
+            <p className="text-lg text-gray-600">
+              We provide end-to-end solutions for every component of your IT
+              infrastructure, ensuring seamless integration and optimal performance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {infraComponents.map((item, index) => (
+              <div
+                key={index}
+                className="group relative bg-gray-50 p-8 text-center hover:bg-blue-900 transition-all duration-500 cursor-pointer overflow-hidden"
+              >
+                {/* Background Number */}
+                <span className="absolute -bottom-4 -right-4 text-8xl font-bold text-gray-100 group-hover:text-blue-800 transition-colors duration-500">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <div className="relative z-10">
+                  <item.icon className="w-12 h-12 text-blue-900 group-hover:text-white mx-auto mb-4 transition-colors duration-500" />
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-1 transition-colors duration-500">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 group-hover:text-blue-200 transition-colors duration-500">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== MAIN SERVICES - INTERACTIVE ==================== */}
+      <section id="services" className="py-24 bg-gray-900">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-blue-400 font-semibold uppercase tracking-widest text-sm">
+              Our Expertise
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mt-4 mb-6">
+              Core Infrastructure Services
+            </h2>
+            <p className="text-lg text-gray-400">
+              Comprehensive solutions designed to build, optimize, and secure your
+              IT infrastructure.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Left - Service Tabs */}
+            <div className="space-y-4">
+              {mainServices.map((service, index) => (
+                <div
+                  key={service.id}
+                  onClick={() => setActiveService(index)}
+                  className={`cursor-pointer p-6 transition-all duration-300 ${
+                    activeService === index
+                      ? "bg-blue-900 border-l-4 border-white"
+                      : "bg-gray-800 border-l-4 border-transparent hover:bg-gray-700"
+                  }`}
+                >
+                  <div className="flex items-start gap-4">
+                    <service.icon
+                      className={`w-8 h-8 flex-shrink-0 ${
+                        activeService === index ? "text-white" : "text-blue-400"
+                      }`}
+                    />
+                    <div>
+                      <h3
+                        className={`text-xl font-bold mb-2 ${
+                          activeService === index ? "text-white" : "text-gray-100"
+                        }`}
+                      >
+                        {service.title}
+                      </h3>
+                      <p
+                        className={`text-sm ${
+                          activeService === index
+                            ? "text-blue-200"
+                            : "text-gray-400"
+                        }`}
+                      >
+                        {service.shortDesc}
+                      </p>
+                    </div>
+                    <ArrowRight
+                      className={`w-5 h-5 ml-auto flex-shrink-0 transition-transform ${
+                        activeService === index
+                          ? "text-white translate-x-2"
+                          : "text-gray-500"
+                      }`}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Right - Service Details */}
+            <div className="bg-white p-8 lg:p-10 sticky top-24">
+              <div className="aspect-video mb-6 overflow-hidden">
+                <img
+                  src={mainServices[activeService].image}
+                  alt={mainServices[activeService].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {mainServices[activeService].title}
+              </h3>
+
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {mainServices[activeService].description}
+              </p>
+
+              <div className="grid grid-cols-2 gap-3 mb-8">
+                {mainServices[activeService].features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-blue-900 flex-shrink-0" />
+                    <span className="text-sm text-gray-700">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 bg-blue-900 text-white px-6 py-3 font-semibold hover:bg-blue-800 transition-colors"
+              >
+                Learn More
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== BENEFITS - BENTO GRID ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Left - Main Content */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <span className="text-blue-900 font-semibold uppercase tracking-widest text-sm">
+                  Why Choose Us
+                </span>
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+                  Benefits of Our Infrastructure Solutions
+                </h2>
+                <p className="text-lg text-gray-600 mb-8">
+                  Transform your IT operations with solutions that deliver
+                  measurable business value.
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 text-blue-900 font-semibold hover:gap-4 transition-all"
+                >
+                  Get Started Today
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right - Benefit Cards */}
+            <div className="lg:col-span-2 grid sm:grid-cols-2 gap-4">
+              {benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="group bg-gray-50 p-8 hover:bg-blue-900 transition-all duration-500"
+                >
+                  <div className="text-5xl font-bold text-blue-900 group-hover:text-white mb-4 transition-colors">
+                    {benefit.stat}
+                  </div>
+                  <p className="text-sm text-blue-900 group-hover:text-blue-200 uppercase tracking-wider mb-4 transition-colors">
+                    {benefit.statLabel}
+                  </p>
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-white mb-2 transition-colors">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 group-hover:text-blue-100 transition-colors">
+                    {benefit.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== PROCESS - VERTICAL TIMELINE ==================== */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-blue-900 font-semibold uppercase tracking-widest text-sm">
+              Our Approach
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6">
+              How We Work
+            </h2>
+            <p className="text-lg text-gray-600">
+              A proven methodology that ensures successful infrastructure projects
+              every time.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {processSteps.map((step, index) => (
+              <div key={index} className="flex gap-8 mb-12 last:mb-0">
+                {/* Left - Number */}
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-16 bg-blue-900 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
+                    {step.number}
+                  </div>
+                  {index < processSteps.length - 1 && (
+                    <div className="w-0.5 h-full bg-blue-200 mt-4"></div>
+                  )}
+                </div>
+
+                {/* Right - Content */}
+                <div className="pb-12">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== CTA - SPLIT IMAGE ==================== */}
+      <section className="relative">
+        <div className="grid lg:grid-cols-2">
+          {/* Left - Image */}
+          <div className="relative min-h-[400px] lg:min-h-[600px]">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Team"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-blue-900/20"></div>
+          </div>
+
+          {/* Right - Content */}
+          <div className="bg-blue-900 p-12 lg:p-20 flex items-center">
+            <div>
+              <span className="text-blue-300 font-semibold uppercase tracking-widest text-sm">
+                Ready to Transform?
+              </span>
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 leading-tight">
+                Let's Build Your IT Infrastructure Together
+              </h2>
+              <p className="text-blue-100 text-lg mb-8 leading-relaxed">
+                Schedule a free consultation with our infrastructure experts and
+                discover how we can optimize your IT operations.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-8 py-4 font-bold hover:bg-gray-100 transition-colors"
+                >
+                  Schedule Consultation
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <a
+                  href="tel:+971000000000"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 font-bold hover:bg-white/10 transition-colors"
+                >
+                  <Phone className="w-5 h-5" />
+                  +971 00 000 0000
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <Mail className="w-6 h-6 text-blue-300 mb-2" />
+                  <p className="text-blue-200 text-sm">Email Us</p>
+                  <p className="text-white font-semibold">info@onetech.com</p>
+                </div>
+                <div>
+                  <MessageCircle className="w-6 h-6 text-blue-300 mb-2" />
+                  <p className="text-blue-200 text-sm">WhatsApp</p>
+                  <p className="text-white font-semibold">Chat Now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== TESTIMONIALS - CARDS GRID ==================== */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-blue-900 font-semibold uppercase tracking-widest text-sm">
+              Client Success Stories
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6">
+              What Our Clients Say
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 p-8 relative group hover:bg-blue-900 transition-all duration-500"
+              >
+                {/* Quote Mark */}
+                <div className="text-6xl font-serif text-blue-900/20 group-hover:text-white/20 absolute top-4 right-6 transition-colors">
+                  "
+                </div>
+
+                <div className="relative">
+                  <div className="flex items-center gap-1 mb-6">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 text-yellow-500 fill-yellow-500"
+                      />
+                    ))}
+                  </div>
+
+                  <blockquote className="text-gray-700 group-hover:text-blue-100 mb-8 leading-relaxed transition-colors">
+                    {testimonial.quote}
+                  </blockquote>
+
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="font-bold text-gray-900 group-hover:text-white transition-colors">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-sm text-gray-500 group-hover:text-blue-200 transition-colors">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FAQ - NUMBERED CARDS ==================== */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-blue-900 font-semibold uppercase tracking-widest text-sm">
+              FAQ
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6">
+              Common Questions
+            </h2>
+            <p className="text-lg text-gray-600">
+              Find answers to frequently asked questions about our IT
+              infrastructure services.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid gap-4">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white border border-gray-200 overflow-hidden"
+                >
+                  <button
+                    onClick={() =>
+                      setOpenFaq(openFaq === index ? null : index)
+                    }
+                    className="w-full flex items-center gap-6 p-6 text-left hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="text-2xl font-bold text-blue-900 flex-shrink-0">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-semibold text-gray-900 flex-1 text-lg">
+                      {faq.question}
+                    </span>
+                    <div
+                      className={`w-8 h-8 bg-blue-900 flex items-center justify-center flex-shrink-0 transition-transform ${
+                        openFaq === index ? "rotate-180" : ""
+                      }`}
+                    >
+                      {openFaq === index ? (
+                        <Minus className="w-4 h-4 text-white" />
+                      ) : (
+                        <Plus className="w-4 h-4 text-white" />
+                      )}
+                    </div>
+                  </button>
+
+                  <div
+                    className={`transition-all duration-300 overflow-hidden ${
+                      openFaq === index ? "max-h-96" : "max-h-0"
+                    }`}
+                  >
+                    <div className="px-6 pb-6 pl-20 text-gray-600 leading-relaxed">
+                      {faq.answer}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FINAL CTA ==================== */}
+      <section className="py-16 bg-blue-900">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div>
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
+                Ready to Optimize Your IT Infrastructure?
+              </h3>
+              <p className="text-blue-200">
+                Get a free assessment from our infrastructure experts today.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-8 py-4 font-bold hover:bg-gray-100 transition-colors"
+              >
+                Get Free Assessment
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="tel:+971000000000"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 font-bold hover:bg-white/10 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== WHATSAPP BUTTON ==================== */}
+      <a
+        href="https://wa.me/971504153141"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MessageCircle className="w-7 h-7 text-white" />
+      </a>
+
       <Footer />
     </>
   );
 };
-// }
 
-export default IThomePage;
+export default ITInfrastructurePage; 
