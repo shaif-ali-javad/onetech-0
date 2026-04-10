@@ -1,0 +1,1 @@
+import{r as s,j as r,M as e,F as o}from"./index-Bc3aQxEC.js";import{IThomePage as t}from"./it-amc-Gt0z0-7_.js";import"./star-CfFfYIiw.js";import"./circle-check-big-kpF378Qo.js";import"./clock-Cu-HXJD9.js";class j extends s.Component{render(){return r.jsxs("div",{children:[r.jsx(e,{}),r.jsx(t,{}),r.jsx(o,{})]})}}export{j as default,j as services};
